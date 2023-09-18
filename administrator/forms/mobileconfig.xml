@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form addfieldprefix="Joomla\Component\Appsconda\Administrator\Field">
+	<fieldset name="details">
+
+       <field name="id" type="text" default="0" label="COM_APPSCONDA_FORM_LBL_MOBILECONFIG_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+        <field
+			name="titlebgcolor"
+			type="color"
+			label="COM_APPSCONDA_MOBILECONFIG_TITLEBGCOLOR_LBL"
+			hint="COM_APPSCONDA_MOBILECONFIG_TITLEBGCOLOR_DESC"
+			default=""
+			/>
+			
+		<field
+			name="titletextcolor"
+			type="color"
+			label="COM_APPSCONDA_MOBILECONFIG_TITLETEXTCOLOR_LBL"
+			hint="COM_APPSCONDA_MOBILECONFIG_TITLETEXTCOLOR_DESC"
+			default=""
+			/>
+			
+		<field
+			name="hamburgercolor"
+			type="color"
+			label="COM_APPSCONDA_MOBILECONFIG_HAMBURGERCOLOR_LBL"
+			hint="COM_APPSCONDA_MOBILECONFIG_HAMBURGERCOLOR_DESC"
+			default=""
+			/>
+		
+		<field
+			name="titleonlaunch"
+			type="text"
+			label="COM_APPSCONDA_MOBILECONFIG_TITLEONLAUNCH_LBL"
+			hint="COM_APPSCONDA_MOBILECONFIG_TITLEONLAUNCH_DESC"
+			default=""
+			/>
+			
+		<field
+			name="backbuttonimage"
+			type="media"
+			label="COM_APPSCONDA_MOBILECONFIG_BACKBUTTONIMAGE_LBL"
+			description="COM_APPSCONDA_MOBILECONFIG_BACKBUTTONIMAGE_DESC"
+			default=""
+			/>
+        
+        <field
+			name="myprofileicon"
+			type="media"
+			label="COM_APPSCONDA_MOBILECONFIG_MYPROFILEICON_LBL"
+			description="COM_APPSCONDA_MOBILECONFIG_MYPROFILEICON_DESC"
+			default=""
+			/>
+	
+		<field
+			name="myprofilecolor"
+			type="color"
+			label="COM_APPSCONDA_MOBILECONFIG_MYPROFILECOLOR_LBL"
+			hint="COM_APPSCONDA_MOBILECONFIG_MYPROFILECOLOR_DESC"
+			default=""
+			/>
+	
+		<field
+			name="myprofilelabel"
+			type="text"
+			label="COM_APPSCONDA_MOBILECONFIG_MYPROFILELABEL_LBL"
+			hint="COM_APPSCONDA_MOBILECONFIG_MYPROFILELABEL_DESC"
+			default=""
+			/>
+			
+		<field
+			name="myprofileshow"
+			type="list"
+			label="COM_APPSCONDA_MOBILECONFIG_MYPROFILESHOW_LBL"
+			description="COM_APPSCONDA_MOBILECONFIG_MYPROFILESHOW_DESC"
+			class="inputbox"
+			size="1"
+			required="true"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		
+		<field
+			name="myeventicon"
+			type="media"
+			label="COM_APPSCONDA_MOBILECONFIG_MYEVENTICON_LBL"
+			description="COM_APPSCONDA_MOBILECONFIG_MYEVENTICON_DESC"
+			default=""
+			/>
+	
+		<field
+			name="myeventcolor"
+			type="color"
+			label="COM_APPSCONDA_MOBILECONFIG_MYEVENTCOLOR_LBL"
+			hint="COM_APPSCONDA_MOBILECONFIG_MYEVENTCOLOR_DESC"
+			default=""
+			/>
+	
+		<field
+			name="myeventlabel"
+			type="text"
+			label="COM_APPSCONDA_MOBILECONFIG_MYEVENTLABEL_LBL"
+			hint="COM_APPSCONDA_MOBILECONFIG_MYEVENTLABEL_DESC"
+			default=""
+			/>
+			
+		<field
+			name="myeventshow"
+			type="list"
+			label="COM_APPSCONDA_MOBILECONFIG_MYEVENTSHOW_LBL"
+			description="COM_APPSCONDA_MOBILECONFIG_MYEVENTSHOW_DESC"
+			class="inputbox"
+			size="1"
+			required="true"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		
+		<field
+			name="selfcheckinradius"
+			type="number"
+			label="COM_APPSCONDA_MOBILECONFIG_SELFCHECKINRADIUS_LBL"
+			hint="COM_APPSCONDA_MOBILECONFIG_SELFCHECKINRADIUS_DESC"
+			default=""
+			/>
+		
+		<field
+			name="myordericon"
+			type="media"
+			label="COM_APPSCONDA_MOBILECONFIG_MYORDERICON_LBL"
+			description="COM_APPSCONDA_MOBILECONFIG_MYORDERICON_DESC"
+			default=""
+			/>
+	
+		<field
+			name="myordercolor"
+			type="color"
+			label="COM_APPSCONDA_MOBILECONFIG_MYORDERCOLOR_LBL"
+			hint="COM_APPSCONDA_MOBILECONFIG_MYORDERCOLOR_DESC"
+			default=""
+			/>
+	
+		<field
+			name="myorderlabel"
+			type="text"
+			label="COM_APPSCONDA_MOBILECONFIG_MYORDERLABEL_LBL"
+			hint="COM_APPSCONDA_MOBILECONFIG_MYORDERLABEL_DESC"
+			default=""
+			/>
+			
+		<field
+			name="myordershow"
+			type="list"
+			label="COM_APPSCONDA_MOBILECONFIG_MYORDERSHOW_LBL"
+			description="COM_APPSCONDA_MOBILECONFIG_MYORDERSHOW_DESC"
+			class="inputbox"
+			size="1"
+			required="true"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		
+		<field
+			name="myticketicon"
+			type="media"
+			label="COM_APPSCONDA_MOBILECONFIG_MYTICKETICON_LBL"
+			description="COM_APPSCONDA_MOBILECONFIG_MYTICKETICON_DESC"
+			default=""
+			/>
+	
+		<field
+			name="myticketcolor"
+			type="color"
+			label="COM_APPSCONDA_MOBILECONFIG_MYTICKETCOLOR_LBL"
+			hint="COM_APPSCONDA_MOBILECONFIG_MYTICKETCOLOR_DESC"
+			default=""
+			/>
+	
+		<field
+			name="myticketlabel"
+			type="text"
+			label="COM_APPSCONDA_MOBILECONFIG_MYTICKETLABEL_LBL"
+			hint="COM_APPSCONDA_MOBILECONFIG_MYTICKETLABEL_DESC"
+			default=""
+			/>
+			
+		<field
+			name="myticketshow"
+			type="list"
+			label="COM_APPSCONDA_MOBILECONFIG_MYTICKETSHOW_LBL"
+			description="COM_APPSCONDA_MOBILECONFIG_MYTICKETSHOW_DESC"
+			class="inputbox"
+			size="1"
+			required="true"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		
+		<field
+			name="notifyicon"
+			type="media"
+			label="COM_APPSCONDA_MOBILECONFIG_NOTIFYICON_LBL"
+			description="COM_APPSCONDA_MOBILECONFIG_NOTIFYICON_DESC"
+			default=""
+			/>
+	
+		<field
+			name="notifycolor"
+			type="color"
+			label="COM_APPSCONDA_MOBILECONFIG_NOTIFYCOLOR_LBL"
+			hint="COM_APPSCONDA_MOBILECONFIG_NOTIFYCOLOR_DESC"
+			default=""
+			/>
+	
+		<field
+			name="notifylabel"
+			type="text"
+			label="COM_APPSCONDA_MOBILECONFIG_NOTIFYLABEL_LBL"
+			hint="COM_APPSCONDA_MOBILECONFIG_NOTIFYLABEL_DESC"
+			default=""
+			/>
+			
+		<field
+			name="notifyshow"
+			type="list"
+			label="COM_APPSCONDA_MOBILECONFIG_NOTIFYSHOW_LBL"
+			description="COM_APPSCONDA_MOBILECONFIG_NOTIFYSHOW_DESC"
+			class="inputbox"
+			size="1"
+			required="true"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		
+		<field
+			name="checkinadminicon"
+			type="media"
+			label="COM_APPSCONDA_MOBILECONFIG_CHECKINADMINICON_LBL"
+			description="COM_APPSCONDA_MOBILECONFIG_CHECKINADMINICON_DESC"
+			default=""
+			/>
+	
+		<field
+			name="checkinadmincolor"
+			type="color"
+			label="COM_APPSCONDA_MOBILECONFIG_CHECKINADMINCOLOR_LBL"
+			hint="COM_APPSCONDA_MOBILECONFIG_CHECKINADMINCOLOR_DESC"
+			default=""
+			/>
+	
+		<field
+			name="checkinadminlabel"
+			type="text"
+			label="COM_APPSCONDA_MOBILECONFIG_CHECKINADMINLABEL_LBL"
+			hint="COM_APPSCONDA_MOBILECONFIG_CHECKINADMINLABEL_DESC"
+			default=""
+			/>
+			
+		<field
+			name="checkinadminshow"
+			type="list"
+			label="COM_APPSCONDA_MOBILECONFIG_CHECKINADMINSHOW_LBL"
+			description="COM_APPSCONDA_MOBILECONFIG_CHECKINADMINSHOW_DESC"
+			class="inputbox"
+			size="1"
+			required="true"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		
+		<field
+			name="logouticon"
+			type="media"
+			label="COM_APPSCONDA_MOBILECONFIG_LOGOUTICON_LBL"
+			description="COM_APPSCONDA_MOBILECONFIG_LOGOUTICON_DESC"
+			default=""
+			/>
+	
+		<field
+			name="logoutcolor"
+			type="color"
+			label="COM_APPSCONDA_MOBILECONFIG_LOGOUTCOLOR_LBL"
+			hint="COM_APPSCONDA_MOBILECONFIG_LOGOUTCOLOR_DESC"
+			default=""
+			/>
+	
+		<field
+			name="logoutlabel"
+			type="text"
+			label="COM_APPSCONDA_MOBILECONFIG_LOGOUTLABEL_LBL"
+			hint="COM_APPSCONDA_MOBILECONFIG_LOGOUTLABEL_DESC"
+			default=""
+			/>
+			
+		<field
+			name="logoutshow"
+			type="list"
+			label="COM_APPSCONDA_MOBILECONFIG_LOGOUTSHOW_LBL"
+			description="COM_APPSCONDA_MOBILECONFIG_LOGOUTSHOW_DESC"
+			class="inputbox"
+			size="1"
+			required="true"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		
+		<field
+			name="fontsizetitle"
+			type="text"
+			label="COM_APPSCONDA_MOBILECONFIG_FONTSIZETITLE_LBL"
+			hint="COM_APPSCONDA_MOBILECONFIG_FONTSIZETITLE_DESC"
+			default=""
+			/>
+			
+		<field
+			name="fontsizemenu"
+			type="text"
+			label="COM_APPSCONDA_MOBILECONFIG_FONTSIZEMENU_LBL"
+			hint="COM_APPSCONDA_MOBILECONFIG_FONTSIZEMENU_DESC"
+			default=""
+			/>
+			
+		<field
+			name="fontsizebody"
+			type="text"
+			label="COM_APPSCONDA_MOBILECONFIG_FONTSIZEBODY_LBL"
+			hint="COM_APPSCONDA_MOBILECONFIG_FONTSIZEBODY_DESC"
+			default=""
+			/>
+			
+		<field
+			name="fontsizesmall"
+			type="text"
+			label="COM_APPSCONDA_MOBILECONFIG_FONTSIZESMALL_LBL"
+			hint="COM_APPSCONDA_MOBILECONFIG_FONTSIZESMALL_DESC"
+			default=""
+			/>
+			
+		<field
+			name="buttonbgcolor"
+			type="color"
+			label="COM_APPSCONDA_MOBILECONFIG_BUTTONBGCOLOR_LBL"
+			hint="COM_APPSCONDA_MOBILECONFIG_BUTTONBGCOLOR_DESC"
+			default=""
+			/>
+			
+		<field
+			name="buttontextcolor"
+			type="color"
+			label="COM_APPSCONDA_MOBILECONFIG_BUTTONTEXTCOLOR_LBL"
+			hint="COM_APPSCONDA_MOBILECONFIG_BUTTONTEXTCOLOR_DESC"
+			default=""
+			/>
+			
+		<field
+			name="switchcoloron"
+			type="color"
+			label="COM_APPSCONDA_MOBILECONFIG_SWITCHCOLORON_LBL"
+			hint="COM_APPSCONDA_MOBILECONFIG_SWITCHCOLORON_DESC"
+			default=""
+			/>
+			
+		<field
+			name="switchcoloroff"
+			type="color"
+			label="COM_APPSCONDA_MOBILECONFIG_SWITCHCOLOROFF_LBL"
+			hint="COM_APPSCONDA_MOBILECONFIG_SWITCHCOLOROFF_DESC"
+			default=""
+			/>
+			
+		<field
+			name="forgotpasswordshow"
+			type="list"
+			label="COM_APPSCONDA_MOBILECONFIG_FORGOTPASSWORDSHOW_LBL"
+			description="COM_APPSCONDA_MOBILECONFIG_FORGOTPASSWORDSHOW_DESC"
+			class="inputbox"
+			size="1"
+			required="true"
+			default="true"
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		
+		<field
+			name="signupshow"
+			type="list"
+			label="COM_APPSCONDA_MOBILECONFIG_SIGNUPSHOW_LBL"
+			description="COM_APPSCONDA_MOBILECONFIG_SIGNUPSHOW_DESC"
+			class="inputbox"
+			size="1"
+			required="true"
+			default="true"
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		
+		<field
+			name="selfcheckinshow"
+			type="list"
+			label="COM_APPSCONDA_MOBILECONFIG_SELFCHECKINSHOW_LBL"
+			description="COM_APPSCONDA_MOBILECONFIG_SELFCHECKINSHOW_DESC"
+			class="inputbox"
+			size="1"
+			required="true"
+			default="true"
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		
+		<field
+		    name="firebasejson"
+		    type="textarea"
+		    default="default"
+		    label="Firebase SDK Json"
+		    description=""
+		    rows="10"
+		    cols="5"
+		    />
+	
+		<field
+			name="created_by"
+			type="createdby"
+			label="COM_APPSCONDA_MOBILECONFIG_CREATED_BY_LBL"
+			hint="COM_APPSCONDA_MOBILECONFIG_CREATED_BY_DESC"
+			default=""
+			/>
+	
+		<field
+			name="state"
+			type="list"
+			label="COM_APPSCONDA_MOBILECONFIG_STATE_LBL"
+			hint="COM_APPSCONDA_MOBILECONFIG_STATE_DESC"
+			class="inputbox"
+			size="1"
+			default="1"
+			>
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+			<option value="2">JARCHIVED</option>
+			<option value="-2">JTRASHED</option>
+		</field>
+	
+		<field
+			name="ordering"
+			type="hidden"
+			label="COM_APPSCONDA_MOBILECONFIG_ORDERING_LBL"
+			hint="COM_APPSCONDA_MOBILECONFIG_ORDERING_DESC"
+			default="0"
+			/>
+
+	</fieldset>
+</form>

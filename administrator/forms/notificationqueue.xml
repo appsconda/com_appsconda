@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form addfieldprefix="Joomla\Component\Appsconda\Administrator\Field">
+	<fieldset name="details">
+
+       <field name="id" type="text" default="0" label="COM_APPSCONDA_FORM_LBL_NOTIFICATIONQUEUE_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+	   <field
+			name="notification_id"
+			type="text"
+			label="COM_APPSCONDA_NOTIFICATIONQUEUE_NOTIFICATION_ID_LBL"
+			hint="COM_APPSCONDA_NOTIFICATIONQUEUE_NOTIFICATION_ID_DESC"
+			readonly="true"
+			required="true"
+			default=""
+			/>
+		
+		<field
+			name="title"
+			type="text"
+			label="COM_APPSCONDA_PUSH_TITLE_LBL"
+			hint="COM_APPSCONDA_PUSH_TITLE_DESC"
+			readonly="true"
+			required="true"
+			default=""
+			/>
+	
+		<field
+			name="body"
+			type="textarea"
+			label="COM_APPSCONDA_PUSH_MESSAGE_LBL"
+			hint="COM_APPSCONDA_PUSH_MESSAGE_DESC"
+			readonly="true"
+			filter="raw"
+			required="true"
+			default=""
+			/>
+	
+		<field
+			name="image"
+			type="text"
+			label="COM_APPSCONDA_PUSH_IMAGE_LBL"
+			hint="COM_APPSCONDA_PUSH_IMAGE_DESC"
+			readonly="true"
+			default=""
+			/>
+	
+		<field
+			name="token"
+			type="textarea"
+			label="COM_APPSCONDA_NOTIFICATIONQUEUE_TOKEN_LBL"
+			hint="COM_APPSCONDA_NOTIFICATIONQUEUE_TOKEN_DESC"
+			filter="raw"
+			readonly="true"
+			required="true"
+			default=""
+			/>
+	
+		<field
+			name="send_date"
+			type="text"
+			label="COM_APPSCONDA_NOTIFICATIONQUEUE_SEND_DATE_LBL"
+			hint="COM_APPSCONDA_NOTIFICATIONQUEUE_SEND_DATE_DESC"
+			readonly="true"
+			required="true"
+			default=""
+			/>
+	
+		<field
+			name="created_by"
+			type="createdby"
+			label="COM_APPSCONDA_NOTIFICATIONQUEUE_CREATED_BY_LBL"
+			hint="COM_APPSCONDA_NOTIFICATIONQUEUE_CREATED_BY_DESC"
+			default=""
+			/>
+	
+		<field
+			name="state"
+			type="list"
+			label="COM_APPSCONDA_NOTIFICATIONQUEUE_STATE_LBL"
+			hint="COM_APPSCONDA_NOTIFICATIONQUEUE_STATE_DESC"
+			class="inputbox"
+			size="1"
+			default="1"
+			>
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+			<option value="2">JARCHIVED</option>
+			<option value="-2">JTRASHED</option>
+		</field>
+	
+		<field
+			name="ordering"
+			type="hidden"
+			label="COM_APPSCONDA_NOTIFICATIONQUEUE_ORDERING_LBL"
+			hint="COM_APPSCONDA_NOTIFICATIONQUEUE_ORDERING_DESC"
+			default="0"
+			/>
+
+	</fieldset>
+</form>

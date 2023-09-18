@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_APPSCONDA_PUBLICATION_VIEW_DEFAULT_TITLE" option="View">
+		<message>
+			<![CDATA[COM_APPSCONDA_PUBLICATION_VIEW_DEFAULT_DESC]]>
+		</message>
+	</layout>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="id" type="sql" label="COM_APPSCONDA_PUBLICATION_ID_FIELD_LABEL"
+					   description="COM_APPSCONDA_PUBLICATION_ID_FIELD_DESC"
+					   query="SELECT id FROM #__appsconda_publications ORDER BY id ASC" key_field="id"
+					   value_field="id" required="true" />
+
+				<!-- Define your basic params for the view here -->
+			</fieldset>
+		</fields>
+	</config>
+</metadata>

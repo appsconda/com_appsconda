@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form addfieldprefix="Joomla\Component\Appsconda\Administrator\Field">
+	<fieldset name="details">
+
+       <field name="id" type="text" default="0" label="COM_APPSCONDA_FORM_LBL_COMPILATION_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+	   <field
+			name="appname"
+			type="text"
+			label="COM_APPSCONDA_COMPILATION_APPNAME_LBL"
+			hint="COM_APPSCONDA_COMPILATION_APPNAME_DESC"
+			required="true"
+			default=""
+			/>
+	
+		<field
+			name="packagename"
+			type="text"
+			label="COM_APPSCONDA_COMPILATION_PACKAGENAME_LBL"
+			hint="COM_APPSCONDA_COMPILATION_PACKAGENAME_DESC"
+			required="true"
+			default=""
+			/>
+	
+		<field
+			name="entrypage"
+			type="list"
+			label="COM_APPSCONDA_COMPILATION_ENTRYPAGE_LBL"
+			hint="COM_APPSCONDA_COMPILATION_ENTRYPAGE_DESC"
+			class="inputbox"
+			size="1"
+			required="true"
+			default=""
+			>
+			<option value="custom">Custom Page 1</option>
+			<option value="customtwo">Custom Page 2</option>
+			<option value="articles">Articles Category 1</option>
+			<option value="articlestwo">Articles Category 2</option>
+			<option value="categoriesarticles">Article Categories</option>
+			<option value="contact">Contacts Category</option>
+			<option value="events">Event Booking</option>
+			<option value="custompages">Custom Pages</option>
+			<option value="shop">Eshop</option>
+			<option value="forum">Kunena Forum</option>
+			<option value="videos">YouTube Channel</option>
+			<option value="gallery">SP Easy Image Gallery</option>
+			<option value="support">Helpdesk Pro</option>
+		</field>
+	
+		<field
+			name="appicon"
+			type="media"
+			label="COM_APPSCONDA_COMPILATION_APPICON_LBL"
+			hint="COM_APPSCONDA_COMPILATION_APPICON_DESC"
+			required="true"
+			default=""
+			/>
+	
+		<field
+			name="splashimage"
+			type="media"
+			label="COM_APPSCONDA_COMPILATION_SPLASHIMAGE_LBL"
+			hint="COM_APPSCONDA_COMPILATION_SPLASHIMAGE_DESC"
+			required="true"
+			default=""
+			/>
+	
+		<field
+			name="splashbackground"
+			type="color"
+			label="COM_APPSCONDA_COMPILATION_SPLASHBACKGROUND_LBL"
+			hint="COM_APPSCONDA_COMPILATION_SPLASHBACKGROUND_DESC"
+			required="true"
+			default=""
+			/>
+	
+		<field
+			name="created_by"
+			type="createdby"
+			label="COM_APPSCONDA_COMPILATION_CREATED_BY_LBL"
+			hint="COM_APPSCONDA_COMPILATION_CREATED_BY_DESC"
+			default=""
+			/>
+	
+		<field
+			name="state"
+			type="list"
+			label="COM_APPSCONDA_COMPILATION_STATE_LBL"
+			hint="COM_APPSCONDA_COMPILATION_STATE_DESC"
+			class="inputbox"
+			size="1"
+			default="1"
+			>
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+			<option value="2">JARCHIVED</option>
+			<option value="-2">JTRASHED</option>
+		</field>
+	
+		<field
+			name="ordering"
+			type="hidden"
+			label="COM_APPSCONDA_COMPILATION_ORDERING_LBL"
+			hint="COM_APPSCONDA_COMPILATION_ORDERING_DESC"
+			default="0"
+			/>
+
+	</fieldset>
+</form>

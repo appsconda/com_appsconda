@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form addfieldprefix="Joomla\Component\Appsconda\Administrator\Field">
+	<fieldset name="details">
+
+       <field name="id" type="text" default="0" label="COM_APPSCONDA_FORM_LBL_CUSTOMPAGE_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+
+	   <field
+			name="name"
+			type="textfield"
+			label="COM_APPSCONDA_CUSTOMPAGE_NAME_LBL"
+			description="COM_APPSCONDA_CUSTOMPAGE_NAME_DESC"
+			default=""
+			/>
+			
+		<field
+			name="image1"
+			type="media"
+			label="COM_APPSCONDA_CUSTOMPAGE_IMAGE1_LBL"
+			description="COM_APPSCONDA_CUSTOMPAGE_IMAGE1_DESC"
+			default=""
+			/>
+		
+		<field
+			name="title1"
+			type="textfield"
+			label="COM_APPSCONDA_CUSTOMPAGE_TITLE1_LBL"
+			description="COM_APPSCONDA_CUSTOMPAGE_TITLE1_DESC"
+			default=""
+			/>
+	
+		<field
+			name="content1"
+			type="textarea"
+			label="COM_APPSCONDA_CUSTOMPAGE_CONTENT1_LBL"
+			description="COM_APPSCONDA_CUSTOMPAGE_CONTENT1_DESC"
+			filter="raw"
+			default=""
+			/>
+	
+		<field
+			name="image2"
+			type="media"
+			label="COM_APPSCONDA_CUSTOMPAGE_IMAGE2_LBL"
+			description="COM_APPSCONDA_CUSTOMPAGE_IMAGE2_DESC"
+			default=""
+			/>
+		
+		<field
+			name="title2"
+			type="textfield"
+			label="COM_APPSCONDA_CUSTOMPAGE_TITLE2_LBL"
+			description="COM_APPSCONDA_CUSTOMPAGE_TITLE2_DESC"
+			default=""
+			/>
+	
+		<field
+			name="content2"
+			type="textarea"
+			label="COM_APPSCONDA_CUSTOMPAGE_CONTENT2_LBL"
+			description="COM_APPSCONDA_CUSTOMPAGE_CONTENT2_DESC"
+			filter="raw"
+			default=""
+			/>
+	
+		<field
+			name="image3"
+			type="media"
+			label="COM_APPSCONDA_CUSTOMPAGE_IMAGE3_LBL"
+			description="COM_APPSCONDA_CUSTOMPAGE_IMAGE3_DESC"
+			default=""
+			/>
+	
+		<field
+			name="title3"
+			type="textfield"
+			label="COM_APPSCONDA_CUSTOMPAGE_TITLE3_LBL"
+			description="COM_APPSCONDA_CUSTOMPAGE_TITLE3_DESC"
+			default=""
+			/>
+	
+		<field
+			name="content3"
+			type="textarea"
+			label="COM_APPSCONDA_CUSTOMPAGE_CONTENT3_LBL"
+			description="COM_APPSCONDA_CUSTOMPAGE_CONTENT3_DESC"
+			filter="raw"
+			default=""
+			/>
+	
+		<field
+			name="image4"
+			type="media"
+			label="COM_APPSCONDA_CUSTOMPAGE_IMAGE4_LBL"
+			description="COM_APPSCONDA_CUSTOMPAGE_IMAGE4_DESC"
+			default=""
+			/>
+	
+		<field
+			name="title4"
+			type="textfield"
+			label="COM_APPSCONDA_CUSTOMPAGE_TITLE4_LBL"
+			description="COM_APPSCONDA_CUSTOMPAGE_TITLE4_DESC"
+			default=""
+			/>
+	
+		<field
+			name="content4"
+			type="textarea"
+			label="COM_APPSCONDA_CUSTOMPAGE_CONTENT4_LBL"
+			description="COM_APPSCONDA_CUSTOMPAGE_CONTENT4_DESC"
+			filter="raw"
+			default=""
+			/>
+	
+		<field
+			name="image5"
+			type="media"
+			label="COM_APPSCONDA_CUSTOMPAGE_IMAGE5_LBL"
+			description="COM_APPSCONDA_CUSTOMPAGE_IMAGE5_DESC"
+			default=""
+			/>
+	
+		<field
+			name="title5"
+			type="textfield"
+			label="COM_APPSCONDA_CUSTOMPAGE_TITLE5_LBL"
+			description="COM_APPSCONDA_CUSTOMPAGE_TITLE5_DESC"
+			default=""
+			/>
+	
+		<field
+			name="content5"
+			type="textarea"
+			label="COM_APPSCONDA_CUSTOMPAGE_CONTENT5_LBL"
+			description="COM_APPSCONDA_CUSTOMPAGE_CONTENT5_DESC"
+			filter="raw"
+			default=""
+			/>
+	
+		<field
+			name="image6"
+			type="media"
+			label="COM_APPSCONDA_CUSTOMPAGE_IMAGE6_LBL"
+			description="COM_APPSCONDA_CUSTOMPAGE_IMAGE6_DESC"
+			default=""
+			/>
+	
+		<field
+			name="title6"
+			type="textfield"
+			label="COM_APPSCONDA_CUSTOMPAGE_TITLE6_LBL"
+			description="COM_APPSCONDA_CUSTOMPAGE_TITLE6_DESC"
+			default=""
+			/>
+	
+		<field
+			name="content6"
+			type="textarea"
+			label="COM_APPSCONDA_CUSTOMPAGE_CONTENT6_LBL"
+			description="COM_APPSCONDA_CUSTOMPAGE_CONTENT6_DESC"
+			filter="raw"
+			default=""
+			/>
+	
+		<field
+			name="image7"
+			type="media"
+			label="COM_APPSCONDA_CUSTOMPAGE_IMAGE7_LBL"
+			description="COM_APPSCONDA_CUSTOMPAGE_IMAGE7_DESC"
+			default=""
+			/>
+	
+		<field
+			name="title7"
+			type="textfield"
+			label="COM_APPSCONDA_CUSTOMPAGE_TITLE7_LBL"
+			description="COM_APPSCONDA_CUSTOMPAGE_TITLE7_DESC"
+			default=""
+			/>
+	
+		<field
+			name="content7"
+			type="textarea"
+			label="COM_APPSCONDA_CUSTOMPAGE_CONTENT7_LBL"
+			description="COM_APPSCONDA_CUSTOMPAGE_CONTENT7_DESC"
+			filter="raw"
+			default=""
+			/>
+	
+		<field
+			name="image8"
+			type="media"
+			label="COM_APPSCONDA_CUSTOMPAGE_IMAGE8_LBL"
+			description="COM_APPSCONDA_CUSTOMPAGE_IMAGE8_DESC"
+			default=""
+			/>
+	
+		<field
+			name="title8"
+			type="textfield"
+			label="COM_APPSCONDA_CUSTOMPAGE_TITLE8_LBL"
+			description="COM_APPSCONDA_CUSTOMPAGE_TITLE8_DESC"
+			default=""
+			/>
+	
+		<field
+			name="content8"
+			type="textarea"
+			label="COM_APPSCONDA_CUSTOMPAGE_CONTENT8_LBL"
+			description="COM_APPSCONDA_CUSTOMPAGE_CONTENT8_DESC"
+			filter="raw"
+			default=""
+			/>
+	
+		<field
+			name="image9"
+			type="media"
+			label="COM_APPSCONDA_CUSTOMPAGE_IMAGE9_LBL"
+			description="COM_APPSCONDA_CUSTOMPAGE_IMAGE9_DESC"
+			default=""
+			/>
+	
+		<field
+			name="title9"
+			type="textfield"
+			label="COM_APPSCONDA_CUSTOMPAGE_TITLE9_LBL"
+			description="COM_APPSCONDA_CUSTOMPAGE_TITLE9_DESC"
+			default=""
+			/>
+	
+		<field
+			name="content9"
+			type="textarea"
+			label="COM_APPSCONDA_CUSTOMPAGE_CONTENT9_LBL"
+			description="COM_APPSCONDA_CUSTOMPAGE_CONTENT9_DESC"
+			filter="raw"
+			default=""
+			/>
+	
+		<field
+			name="image10"
+			type="media"
+			label="COM_APPSCONDA_CUSTOMPAGE_IMAGE10_LBL"
+			description="COM_APPSCONDA_CUSTOMPAGE_IMAGE10_DESC"
+			default=""
+			/>
+	
+		<field
+			name="title10"
+			type="textfield"
+			label="COM_APPSCONDA_CUSTOMPAGE_TITLE10_LBL"
+			description="COM_APPSCONDA_CUSTOMPAGE_TITLE10_DESC"
+			default=""
+			/>
+	
+		<field
+			name="content10"
+			type="textarea"
+			label="COM_APPSCONDA_CUSTOMPAGE_CONTENT10_LBL"
+			description="COM_APPSCONDA_CUSTOMPAGE_CONTENT10_DESC"
+			filter="raw"
+			default=""
+			/>
+	
+		<field
+			name="ordering"
+			type="hidden"
+			label="COM_APPSCONDA_CUSTOMPAGE_ORDERING_LBL"
+			description="COM_APPSCONDA_CUSTOMPAGE_ORDERING_DESC"
+			default="0"
+			/>
+	
+		<field
+			name="created_by"
+			type="createdby"
+			label="COM_APPSCONDA_CUSTOMPAGE_CREATED_BY_LBL"
+			description="COM_APPSCONDA_CUSTOMPAGE_CREATED_BY_DESC"
+			default=""
+			/>
+	
+		<field
+			name="state"
+			type="list"
+			label="COM_APPSCONDA_CUSTOMPAGE_STATE_LBL"
+			description="COM_APPSCONDA_CUSTOMPAGE_STATE_DESC"
+			class="inputbox"
+			size="1"
+			default="1"
+			>
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+			<option value="2">JARCHIVED</option>
+			<option value="-2">JTRASHED</option>
+		</field>
+
+	</fieldset>
+</form>
