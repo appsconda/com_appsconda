@@ -36,14 +36,14 @@
     <administration>
         <menu>COM_APPSCONDA</menu>
         <submenu>
-            <menu link="option=com_appsconda&amp;view=custompages" view="custompages" img="components/com_appsconda/assets/images/view-16x16-custompages.png" alt="Appsconda/Custompages">COM_APPSCONDA_TITLE_CUSTOMPAGES</menu>
-			<menu link="option=com_appsconda&amp;view=drawermenu&amp;layout=edit&amp;id=1" view="drawermenu" img="components/com_appsconda/assets/images/view-16x16-custompages.png" alt="Appsconda/Drawermenu">COM_APPSCONDA_TITLE_DRAWERMENUS</menu>
-			<menu link="option=com_appsconda&amp;view=mobileconfig&amp;layout=edit&amp;id=1" view="mobileconfig" img="components/com_appsconda/assets/images/view-16x16-custompages.png" alt="Appsconda/Mobileconfig">COM_APPSCONDA_TITLE_MOBILECONFIGS</menu>
-			<menu link="option=com_appsconda&amp;view=pushs" view="pushs" img="components/com_appsconda/assets/images/view-16x16-custompages.png" alt="Appsconda/Pushs">COM_APPSCONDA_TITLE_PUSHS</menu>
-			<menu link="option=com_appsconda&amp;view=mobiledevices" view="mobiledevices" img="components/com_appsconda/assets/images/view-16x16-custompages.png" alt="Appsconda/Mobiledevices">COM_APPSCONDA_TITLE_MOBILEDEVICES</menu>
-			<menu link="option=com_appsconda&amp;view=notificationqueues" view="notificationqueues" img="components/com_appsconda/assets/images/view-16x16-custompages.png" alt="Appsconda/Notificationqueues">COM_APPSCONDA_TITLE_NOTIFICATIONQUEUES</menu>
-			<menu link="option=com_appsconda&amp;view=compilation&amp;layout=edit&amp;id=1" view="compilation" img="components/com_appsconda/assets/images/view-16x16-custompages.png" alt="Appsconda/Compilation">COM_APPSCONDA_TITLE_COMPILATIONS</menu>
-			<menu link="option=com_appsconda&amp;view=publications" view="publications" img="components/com_appsconda/assets/images/view-16x16-custompages.png" alt="Appsconda/Publications">COM_APPSCONDA_TITLE_PUBLICATIONS</menu>
+            <menu link="option=com_appsconda&amp;view=custompages" img="components/com_appsconda/assets/images/view-16x16-custompages.png">COM_APPSCONDA_TITLE_CUSTOMPAGES</menu>
+			<menu link="option=com_appsconda&amp;view=drawermenu&amp;layout=edit&amp;id=1" img="components/com_appsconda/assets/images/view-16x16-custompages.png">COM_APPSCONDA_TITLE_DRAWERMENUS</menu>
+			<menu link="option=com_appsconda&amp;view=mobileconfig&amp;layout=edit&amp;id=1" img="components/com_appsconda/assets/images/view-16x16-custompages.png">COM_APPSCONDA_TITLE_MOBILECONFIGS</menu>
+			<menu link="option=com_appsconda&amp;view=pushs" img="components/com_appsconda/assets/images/view-16x16-custompages.png">COM_APPSCONDA_TITLE_PUSHS</menu>
+			<menu link="option=com_appsconda&amp;view=mobiledevices" img="components/com_appsconda/assets/images/view-16x16-custompages.png">COM_APPSCONDA_TITLE_MOBILEDEVICES</menu>
+			<menu link="option=com_appsconda&amp;view=notificationqueues" img="components/com_appsconda/assets/images/view-16x16-custompages.png">COM_APPSCONDA_TITLE_NOTIFICATIONQUEUES</menu>
+			<menu link="option=com_appsconda&amp;view=compilation&amp;layout=edit&amp;id=1" img="components/com_appsconda/assets/images/view-16x16-custompages.png">COM_APPSCONDA_TITLE_COMPILATIONS</menu>
+			<menu link="option=com_appsconda&amp;view=publications" img="components/com_appsconda/assets/images/view-16x16-custompages.png">COM_APPSCONDA_TITLE_PUBLICATIONS</menu>
         </submenu>
         <files folder="administrator">
             <filename>access.xml</filename>
