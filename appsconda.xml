@@ -61,4 +61,8 @@
         </languages>
     </administration>
 
+	<updateservers>	
+		<server type="extension" priority="1" name="AppsConda Extension">https://appsconda.com/updates/appsconda.xml</server>
+	</updateservers>
+
 </extension>
