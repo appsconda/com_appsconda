@@ -3364,6 +3364,48 @@ header('Content-Type: application/json');
 }
 
 }
+	public function cartpage()
+    {
+        $jinput = Factory::getApplication()->input;
+		$userid = Factory::getApplication()->input->cookie->get('userid', '', 'INT');
+		$deviceidlogin = Factory::getApplication()->input->cookie->get('deviceidlogin', '', 'STRING');
+		$passwordraw = Factory::getApplication()->input->cookie->get('password', '', 'STRING');
+    
+        $user = Factory::getUser();
+        
+        if ($user->guest) {
+
+            if (!empty($passwordraw) && !empty($userid) && !empty($deviceidlogin)) {
+        
+                // Authenticate the user using the plugin
+                $options = array('remember' => true);
+                $credentials['userid'] = $userid;
+                $credentials['password'] = $passwordraw;
+				$credentials['deviceidlogin'] = $deviceidlogin;
+                $result = Factory::getApplication()->login($credentials, $options);
+        
+                // Process the result
+                if ($result) {
+                    // User authenticated successfully
+                    
+                    
+        
+                $this->setRedirect("index.php?option=com_eshop&view=cart");
+                    //Factory::getApplication()->close();
+                } else {
+                    // Authentication failed
+                    $this->setRedirect("index.php?option=com_eshop&view=cart");
+                    //Factory::getApplication()->close();
+                }
+                
+        } else {
+            $this->setRedirect("index.php?option=com_eshop&view=cart");
+        }
+    } else {
+            // User was already loggedin
+            $this->setRedirect("index.php?option=com_eshop&view=cart");
+        }
+    }
 
 	function isjoomla() {
 		header( 'Content-Type: application/json' );
