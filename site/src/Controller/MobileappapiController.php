@@ -3310,28 +3310,60 @@ class MobileappapiController extends FormController {
 	}
 
 
-	function eventtest() {
+	function cartnumber()
+		{
+		    
+$rawData = file_get_contents("php://input");
+$data = json_decode($rawData, true);
+$userid = isset($data['userid']) ? $data['userid'] : null;
+$passwordraw = isset($data['password']) ? $data['password'] : null;
+$deviceidlogin = isset($data['deviceidlogin']) ? $data['deviceidlogin'] : null;
 
+            if (!empty($passwordraw) && !empty($userid) && !empty($deviceidlogin)) 
+            {
+                $options = array('remember' => true);
+                $credentials['userid'] = $userid;
+                $credentials['password'] = $passwordraw;
+				$credentials['deviceidlogin'] = $deviceidlogin;
+                $result = Factory::getApplication()->login($credentials, $options);
+            }
+        
+                if ($result) {
 
-		$password = '1';
-		$hashedPassword = UserHelper::hashPassword( $password );
-		echo $hashedPassword;
+                $db = Factory::getDbo();
 
-		$hexValue = "7b22313a59546f794f6e74704f6a4937637a6f784f694932496a74704f6a4537637a6f784f69497a496a7439223a2231222c22323a59546f784f6e74704f6a4d37637a6f794f6949784d53493766513d3d223a2231222c22343a59546f794f6e74704f6a5537637a6f794f6949784e79493761546f324f334d364d6a6f694d6a49694f33303d223a2231222c22353a59546f794f6e74704f6a6337637a6f794f6949794e53493761546f344f334d364d6a6f694d6a59694f33303d223a2231222c2231333a59546f784f6e74704f6a45354f334d364d6a6f694e544d694f33303d223a2232227d";
-		$binaryData = hex2bin( $hexValue );
-		$dataArray = json_decode( $binaryData, true );
-		$totalProducts = 0;
+$query = $db->getQuery(true)
+    ->select('cart_data')
+    ->from($db->quoteName('#__eshop_carts'))
+    ->where($db->quoteName('customer_id') . ' = ' . $db->quote($userid));
 
-		foreach ( $dataArray as $value ) {
-			$lastNumber = intval( $value );
-			$totalProducts += $lastNumber;
-		}
-		echo "Total number of products: " . $totalProducts;
+$db->setQuery($query);
+$hexValue = $db->loadResult();
+	
+$dataArray = json_decode($hexValue, true);
+$totalProducts = 0;
+foreach ($dataArray as $value) {
+    $lastNumber = intval($value);
+    $totalProducts += $lastNumber;
+}
+header('Content-Type: application/json');
+	    http_response_code(200);
+        $result = array(
+            'number_of_products' => $totalProducts
+        );
+        echo json_encode($result);
+        jexit();
+} else {
+    header('Content-Type: application/json');
+	    http_response_code(200);
+        $result = array(
+            'number_of_products' => 0
+        );
+        echo json_encode($result);
+        jexit();
+}
 
-
-
-
-	}
+}
 
 	function isjoomla() {
 		header( 'Content-Type: application/json' );
