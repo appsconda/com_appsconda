@@ -3364,6 +3364,16 @@ header('Content-Type: application/json');
 }
 
 }
+	function productdetailspage()
+		{
+			$response = array(
+				'viewcarttext' => Text::_('VIEW_CART_TEXT')
+			);
+			header('Content-Type: application/json');
+			echo json_encode($response);
+			jexit();
+		}
+	
 	public function cartpage()
     {
         $jinput = Factory::getApplication()->input;
