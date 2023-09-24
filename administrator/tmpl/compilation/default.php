@@ -60,7 +60,7 @@ $packagename = $this->item->packagename;  // Or wherever you get this from
 				echo "</div>";
             } else {
                 // Display error message
-                echo "<div style='background: #fef8f8;color: #c52827;padding: 10px;margin-bottom: 30px;border: 1px solid #c52827;'>";
+                echo "<div style='background: #e1dd9b;color: #000;padding: 10px;margin-bottom: 30px;border: 1px solid #bfba67;'>";
 				echo "<div>Message from the App Compilation API:</div>";
 				echo "<div class='error'>" . htmlspecialchars($result['message']) . "</div>";
 				echo "</div>";
