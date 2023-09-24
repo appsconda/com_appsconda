@@ -77,7 +77,13 @@ if (!empty($packagename)) {
 				echo "</div>";
         }
 
-}
+} else {
+                // Display error message
+                echo "<div style='background: #fef8f8;color: #c52827;padding: 10px;margin-bottom: 30px;border: 1px solid #c52827;'>";
+				echo "<div><b><u>Next steps to publish your mobile app on Playstore and Appstore:</u></b></div>";
+				echo "<div class='error'><br>Information about publishing your app will be visible here once your app has been compiled.</div>";
+				echo "</div>";
+            }
 
  
   
