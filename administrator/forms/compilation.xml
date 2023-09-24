@@ -34,19 +34,19 @@
 			required="true"
 			default=""
 			>
-			<option value="custom">Custom Page 1</option>
-			<option value="customtwo">Custom Page 2</option>
-			<option value="articles">Articles Category 1</option>
-			<option value="articlestwo">Articles Category 2</option>
-			<option value="categoriesarticles">Article Categories</option>
-			<option value="contact">Contacts Category</option>
-			<option value="events">Event Booking</option>
-			<option value="custompages">Custom Pages</option>
-			<option value="shop">Eshop</option>
-			<option value="forum">Kunena Forum</option>
-			<option value="videos">YouTube Channel</option>
-			<option value="gallery">SP Easy Image Gallery</option>
-			<option value="support">Helpdesk Pro</option>
+			<option value="CustomWidget">Custom Page 1</option>
+			<option value="CustomtwoWidget">Custom Page 2</option>
+			<option value="ArticlesWidget">Articles Category 1</option>
+			<option value="ArticlestwoWidget">Articles Category 2</option>
+			<option value="ArticlecategoriesWidget">Article Categories</option>
+			<option value="ContactWidget">Contacts Category</option>
+			<option value="EventsWidget">Event Booking</option>
+			<option value="CustompagesWidget">Custom Pages</option>
+			<option value="ShopWidget">Eshop</option>
+			<option value="ForumWidget">Kunena Forum</option>
+			<option value="VideosWidget">YouTube Channel</option>
+			<option value="GalleryWidget">SP Easy Image Gallery</option>
+			<option value="SupportWidget">Helpdesk Pro</option>
 		</field>
 	
 		<field
