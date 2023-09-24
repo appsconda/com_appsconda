@@ -56,7 +56,7 @@ $packagename = $this->item->packagename;  // Or wherever you get this from
                 }
                 echo "</div>";
 
-                echo "<div>" . Text::_('APP_COMPILATION_NOTE') . htmlspecialchars($result['result']['note']) . "</div>";
+                echo "<div style='background: yellow;color: #000;'>" . Text::_('APP_COMPILATION_NOTE') . htmlspecialchars($result['result']['note']) . "</div>";
 				echo "</div>";
             } else {
                 // Display error message
