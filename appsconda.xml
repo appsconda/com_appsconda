@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="component" method="upgrade">
     <name>AppsConda</name>
-    <element>com_appsconda</element>
     <creationDate>2023-09-19</creationDate>
     <copyright>Copyright (C) 2023. All rights reserved.</copyright>
     <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
@@ -63,7 +62,7 @@
     </administration>
 
 	<updateservers>	
-		<server type="extension" priority="1" name="AppsConda Extension">https://appsconda.com/updates/appsconda.xml</server>
+		<server type="extension" priority="1" name="AppsConda">https://appsconda.com/updates/appsconda.xml</server>
 	</updateservers>
 
 </extension>
