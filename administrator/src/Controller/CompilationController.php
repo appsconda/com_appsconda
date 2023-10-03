@@ -69,12 +69,12 @@ class CompilationController extends FormController {
 				if ( $width != 512 || $height != 512 ) {
 					$this->setRedirect( 'index.php?option=com_appsconda&view=compilation&layout=edit&id=' . $compilationId, false );
 					$app->enqueueMessage( Text::_( 'IMAGE_SIZE_APPICON_NOT_MEETS_REQUIREMENTS_COULD_NOT_SEND_FOR_COMPILATION' ), 'error' );
-					return;
+					//return;
 				}
 			} else {
 				$this->setRedirect( 'index.php?option=com_appsconda&view=compilation&layout=edit&id=' . $compilationId, false );
 				$app->enqueueMessage( Text::_( 'IMAGE_SIZE_APPICON_NOT_MEETS_REQUIREMENTS_COULD_NOT_SEND_FOR_COMPILATION' ), 'error' );
-				return;
+				//return;
 			}
 			
 			$splashimage = $item->splashimage;
@@ -100,12 +100,12 @@ class CompilationController extends FormController {
 				if ( $width != 512 || $height != 512 ) {
 					$this->setRedirect( 'index.php?option=com_appsconda&view=compilation&layout=edit&id=' . $compilationId, false );
 					$app->enqueueMessage( Text::_( 'IMAGE_SIZE_SPLASH_NOT_MEETS_REQUIREMENTS_COULD_NOT_SEND_FOR_COMPILATION' ), 'error' );
-					return;
+					//return;
 				}
 			} else {
 				$this->setRedirect( 'index.php?option=com_appsconda&view=compilation&layout=edit&id=' . $compilationId, false );
 				$app->enqueueMessage( Text::_( 'IMAGE_SIZE_SPLASH_NOT_MEETS_REQUIREMENTS_COULD_NOT_SEND_FOR_COMPILATION' ), 'error' );
-				return;
+				//return;
 			}
 			
 			
