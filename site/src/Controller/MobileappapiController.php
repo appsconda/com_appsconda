@@ -1991,10 +1991,20 @@ class MobileappapiController extends FormController {
 				$item[ 'menuSupportAccess' ] = true;
 			}
 
-			if ( !empty( $row->imageabovemenu ) ) {
-				$item[ 'imageAboveMenu' ] = Uri::base() . substr( $row->imageabovemenu, 0, strpos( $row->imageabovemenu, '#' ) );
+			if (!empty($row->imageabovemenu)) {
+		                $imagePath = $row->imageabovemenu;
+		                
+		                // Check if '#' character exists in the string
+		                $pos = strpos($imagePath, '#');
+		                
+		                if ($pos !== false) {
+		                    // Extract the part of the string before '#'
+		                    $imagePath = substr($imagePath, 0, $pos);
+		                }
+		                
+		                $item['imageAboveMenu'] = Uri::base() . $imagePath;
 			} else {
-				$item[ 'imageAboveMenu' ] = "";
+		                $item['imageAboveMenu'] = "";
 			}
 
 			if ( $row->loginshow == "true" ) {
