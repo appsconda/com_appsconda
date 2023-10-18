@@ -1839,11 +1839,22 @@ class MobileappapiController extends FormController {
 				$item[ 'menuCustomShow' ] = true;
 				$item[ 'menuCustomLabel' ] = $row->menu1label;
 				$item[ 'menuCustomColor' ] = $row->menu1color;
-				if ( !empty( $row->menu1icon ) ) {
-					$item[ 'menuCustomIcon' ] = Uri::base() . substr( $row->menu1icon, 0, strpos( $row->menu1icon, '#' ) );
+				if (!empty($row->menu1icon)) {
+					$iconPath = $row->menu1icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['menuCustomIcon'] = Uri::base() . $iconPath;
 				} else {
-					$item[ 'menuCustomIcon' ] = "";
+					$item['menuCustomIcon'] = "";
 				}
+
 				$item[ 'menuCustomAccess' ] = $row->menu1access == "true" ? true : ( $row->menu1access == "false" ? false : null );
 			}
 
@@ -1851,11 +1862,22 @@ class MobileappapiController extends FormController {
 				$item[ 'menuCustom2Show' ] = true;
 				$item[ 'menuCustom2Label' ] = $row->menu2label;
 				$item[ 'menuCustom2Color' ] = $row->menu2color;
-				if ( !empty( $row->menu2icon ) ) {
-					$item[ 'menuCustom2Icon' ] = Uri::base() . substr( $row->menu2icon, 0, strpos( $row->menu2icon, '#' ) );
+				if (!empty($row->menu2icon)) {
+					$iconPath = $row->menu2icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['menuCustom2Icon'] = Uri::base() . $iconPath;
 				} else {
-					$item[ 'menuCustom2Icon' ] = "";
+					$item['menuCustom2Icon'] = "";
 				}
+
 				$item[ 'menuCustom2Access' ] = $row->menu2access == "true" ? true : ( $row->menu2access == "false" ? false : null );
 			}
 
@@ -1863,11 +1885,21 @@ class MobileappapiController extends FormController {
 				$item[ 'menuArticlesShow' ] = true;
 				$item[ 'menuArticlesLabel' ] = $row->menu3label;
 				$item[ 'menuArticlesColor' ] = $row->menu3color;
-				if ( !empty( $row->menu3icon ) ) {
-					$item[ 'menuArticlesIcon' ] = Uri::base() . substr( $row->menu3icon, 0, strpos( $row->menu3icon, '#' ) );
-				} else {
-					$item[ 'menuArticlesIcon' ] = "";
-				}
+				if (!empty($row->menu3icon)) {
+                    $iconPath = $row->menu3icon;
+                    
+                    // Check if '#' character exists in the string
+                    $pos = strpos($iconPath, '#');
+                    
+                    if ($pos !== false) {
+                        // Extract the part of the string before '#'
+                        $iconPath = substr($iconPath, 0, $pos);
+                    }
+                    
+                    $item['menuArticlesIcon'] = Uri::base() . $iconPath;
+                } else {
+                    $item['menuArticlesIcon'] = "";
+                }
 				$item[ 'menuArticlesAccess' ] = $row->menu3access == "true" ? true : ( $row->menu3access == "false" ? false : null );
 			}
 
@@ -1875,11 +1907,22 @@ class MobileappapiController extends FormController {
 				$item[ 'menuArticles2Show' ] = true;
 				$item[ 'menuArticles2Label' ] = $row->menu4label;
 				$item[ 'menuArticles2Color' ] = $row->menu4color;
-				if ( !empty( $row->menu4icon ) ) {
-					$item[ 'menuArticles2Icon' ] = Uri::base() . substr( $row->menu4icon, 0, strpos( $row->menu4icon, '#' ) );
+				if (!empty($row->menu4icon)) {
+					$iconPath = $row->menu4icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['menuArticles2Icon'] = Uri::base() . $iconPath;
 				} else {
-					$item[ 'menuArticles2Icon' ] = "";
+					$item['menuArticles2Icon'] = "";
 				}
+
 				$item[ 'menuArticles2Access' ] = $row->menu4access == "true" ? true : ( $row->menu4access == "false" ? false : null );
 			}
 
@@ -1887,11 +1930,22 @@ class MobileappapiController extends FormController {
 				$item[ 'menuArticleCategoriesShow' ] = true;
 				$item[ 'menuArticleCategoriesLabel' ] = $row->menu5label;
 				$item[ 'menuArticleCategoriesColor' ] = $row->menu5color;
-				if ( !empty( $row->menu5icon ) ) {
-					$item[ 'menuArticleCategoriesIcon' ] = Uri::base() . substr( $row->menu5icon, 0, strpos( $row->menu5icon, '#' ) );
+				if (!empty($row->menu5icon)) {
+					$iconPath = $row->menu5icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['menuArticleCategoriesIcon'] = Uri::base() . $iconPath;
 				} else {
-					$item[ 'menuArticleCategoriesIcon' ] = "";
+					$item['menuArticleCategoriesIcon'] = "";
 				}
+
 				$item[ 'menuArticleCategoriesAccess' ] = $row->menu5access == "true" ? true : ( $row->menu5access == "false" ? false : null );
 			}
 
@@ -1899,11 +1953,22 @@ class MobileappapiController extends FormController {
 				$item[ 'menuContactsShow' ] = true;
 				$item[ 'menuContactsLabel' ] = $row->menu6label;
 				$item[ 'menuContactsColor' ] = $row->menu6color;
-				if ( !empty( $row->menu6icon ) ) {
-					$item[ 'menuContactsIcon' ] = Uri::base() . substr( $row->menu6icon, 0, strpos( $row->menu6icon, '#' ) );
+				if (!empty($row->menu6icon)) {
+					$iconPath = $row->menu6icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['menuContactsIcon'] = Uri::base() . $iconPath;
 				} else {
-					$item[ 'menuContactsIcon' ] = "";
+					$item['menuContactsIcon'] = "";
 				}
+
 				$item[ 'menuContactsAccess' ] = $row->menu6access == "true" ? true : ( $row->menu6access == "false" ? false : null );
 			}
 
@@ -1911,11 +1976,22 @@ class MobileappapiController extends FormController {
 				$item[ 'menuEventsShow' ] = true;
 				$item[ 'menuEventsLabel' ] = $row->menu7label;
 				$item[ 'menuEventsColor' ] = $row->menu7color;
-				if ( !empty( $row->menu7icon ) ) {
-					$item[ 'menuEventsIcon' ] = Uri::base() . substr( $row->menu7icon, 0, strpos( $row->menu7icon, '#' ) );
+				if (!empty($row->menu7icon)) {
+					$iconPath = $row->menu7icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['menuEventsIcon'] = Uri::base() . $iconPath;
 				} else {
-					$item[ 'menuEventsIcon' ] = "";
+					$item['menuEventsIcon'] = "";
 				}
+
 				$item[ 'menuEventsAccess' ] = $row->menu7access == "true" ? true : ( $row->menu7access == "false" ? false : null );
 			}
 
@@ -1923,11 +1999,22 @@ class MobileappapiController extends FormController {
 				$item[ 'menuCustompagesShow' ] = true;
 				$item[ 'menuCustompagesLabel' ] = $row->menucustompageslabel;
 				$item[ 'menuCustompagesColor' ] = $row->menucustompagescolor;
-				if ( !empty( $row->menucustompagesicon ) ) {
-					$item[ 'menuCustompagesIcon' ] = Uri::base() . substr( $row->menucustompagesicon, 0, strpos( $row->menucustompagesicon, '#' ) );
+				if (!empty($row->menucustompagesicon)) {
+					$iconPath = $row->menucustompagesicon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['menuCustompagesIcon'] = Uri::base() . $iconPath;
 				} else {
-					$item[ 'menuCustompagesIcon' ] = "";
+					$item['menuCustompagesIcon'] = "";
 				}
+
 				$item[ 'menuCustompagesAccess' ] = $row->menucustompagesaccess == "true" ? true : ( $row->menucustompagesaccess == "false" ? false : null );
 			}
 
@@ -1935,11 +2022,22 @@ class MobileappapiController extends FormController {
 				$item[ 'menuShopShow' ] = true;
 				$item[ 'menuShopLabel' ] = $row->menu8label;
 				$item[ 'menuShopColor' ] = $row->menu8color;
-				if ( !empty( $row->menu8icon ) ) {
-					$item[ 'menuShopIcon' ] = Uri::base() . substr( $row->menu8icon, 0, strpos( $row->menu8icon, '#' ) );
+				if (!empty($row->menu8icon)) {
+					$iconPath = $row->menu8icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['menuShopIcon'] = Uri::base() . $iconPath;
 				} else {
-					$item[ 'menuShopIcon' ] = "";
+					$item['menuShopIcon'] = "";
 				}
+
 				$item[ 'menuShopAccess' ] = $row->menu8access == "true" ? true : ( $row->menu8access == "false" ? false : null );
 			}
 
@@ -1947,11 +2045,22 @@ class MobileappapiController extends FormController {
 				$item[ 'menuForumShow' ] = true;
 				$item[ 'menuForumLabel' ] = $row->menu9label;
 				$item[ 'menuForumColor' ] = $row->menu9color;
-				if ( !empty( $row->menu9icon ) ) {
-					$item[ 'menuForumIcon' ] = Uri::base() . substr( $row->menu9icon, 0, strpos( $row->menu9icon, '#' ) );
+				if (!empty($row->menu9icon)) {
+					$iconPath = $row->menu9icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['menuForumIcon'] = Uri::base() . $iconPath;
 				} else {
-					$item[ 'menuForumIcon' ] = "";
+					$item['menuForumIcon'] = "";
 				}
+
 				$item[ 'menuForumAccess' ] = $row->menu9access == "true" ? true : ( $row->menu9access == "false" ? false : null );
 			}
 
@@ -1959,11 +2068,22 @@ class MobileappapiController extends FormController {
 				$item[ 'menuVideosShow' ] = true;
 				$item[ 'menuVideosLabel' ] = $row->menu10label;
 				$item[ 'menuVideosColor' ] = $row->menu10color;
-				if ( !empty( $row->menu10icon ) ) {
-					$item[ 'menuVideosIcon' ] = Uri::base() . substr( $row->menu10icon, 0, strpos( $row->menu10icon, '#' ) );
+				if (!empty($row->menu10icon)) {
+					$iconPath = $row->menu10icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['menuVideosIcon'] = Uri::base() . $iconPath;
 				} else {
-					$item[ 'menuVideosIcon' ] = "";
+					$item['menuVideosIcon'] = "";
 				}
+
 				$item[ 'menuVideosAccess' ] = $row->menu10access == "true" ? true : ( $row->menu10access == "false" ? false : null );
 			}
 
@@ -1971,11 +2091,22 @@ class MobileappapiController extends FormController {
 				$item[ 'menuGalleryShow' ] = true;
 				$item[ 'menuGalleryLabel' ] = $row->menu11label;
 				$item[ 'menuGalleryColor' ] = $row->menu11color;
-				if ( !empty( $row->menu11icon ) ) {
-					$item[ 'menuGalleryIcon' ] = Uri::base() . substr( $row->menu11icon, 0, strpos( $row->menu11icon, '#' ) );
+				if (!empty($row->menu11icon)) {
+					$iconPath = $row->menu11icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['menuGalleryIcon'] = Uri::base() . $iconPath;
 				} else {
-					$item[ 'menuGalleryIcon' ] = "";
+					$item['menuGalleryIcon'] = "";
 				}
+
 				$item[ 'menuGalleryAccess' ] = $row->menu11access == "true" ? true : ( $row->menu11access == "false" ? false : null );
 			}
 
@@ -1983,11 +2114,22 @@ class MobileappapiController extends FormController {
 				$item[ 'menuSupportShow' ] = true;
 				$item[ 'menuSupportLabel' ] = $row->menusupportlabel;
 				$item[ 'menuSupportColor' ] = $row->menusupportcolor;
-				if ( !empty( $row->menusupporticon ) ) {
-					$item[ 'menuSupportIcon' ] = Uri::base() . substr( $row->menusupporticon, 0, strpos( $row->menusupporticon, '#' ) );
+				if (!empty($row->menusupporticon)) {
+					$iconPath = $row->menusupporticon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['menuSupportIcon'] = Uri::base() . $iconPath;
 				} else {
-					$item[ 'menuSupportIcon' ] = "";
+					$item['menuSupportIcon'] = "";
 				}
+
 				$item[ 'menuSupportAccess' ] = true;
 			}
 
@@ -2011,33 +2153,66 @@ class MobileappapiController extends FormController {
 				$item[ 'menuLoginShow' ] = true;
 				$item[ 'menuLoginLabel' ] = $row->loginlabel;
 				$item[ 'menuLoginColor' ] = $row->logincolor;
-				if ( !empty( $row->loginicon ) ) {
-					$item[ 'menuLoginIcon' ] = Uri::base() . substr( $row->loginicon, 0, strpos( $row->loginicon, '#' ) );
+				if (!empty($row->loginicon)) {
+					$iconPath = $row->loginicon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['menuLoginIcon'] = Uri::base() . $iconPath;
 				} else {
-					$item[ 'menuLoginIcon' ] = "";
+					$item['menuLoginIcon'] = "";
 				}
+
 			}
 
 			if ( $row->myaccountshow == "true" ) {
 				$item[ 'menuMyaccountShow' ] = true;
 				$item[ 'menuMyaccountLabel' ] = $row->myaccountlabel;
 				$item[ 'menuMyaccountColor' ] = $row->myaccountcolor;
-				if ( !empty( $row->myaccounticon ) ) {
-					$item[ 'menuMyaccountIcon' ] = Uri::base() . substr( $row->myaccounticon, 0, strpos( $row->myaccounticon, '#' ) );
+				if (!empty($row->myaccounticon)) {
+					$iconPath = $row->myaccounticon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['menuMyaccountIcon'] = Uri::base() . $iconPath;
 				} else {
-					$item[ 'menuMyaccountIcon' ] = "";
+					$item['menuMyaccountIcon'] = "";
 				}
+
 			}
 
 			if ( $row->logoutshow == "true" ) {
 				$item[ 'menuLogoutShow' ] = true;
 				$item[ 'menuLogoutLabel' ] = $row->logoutlabel;
 				$item[ 'menuLogoutColor' ] = $row->logoutcolor;
-				if ( !empty( $row->logouticon ) ) {
-					$item[ 'menuLogoutIcon' ] = Uri::base() . substr( $row->logouticon, 0, strpos( $row->logouticon, '#' ) );
+				if (!empty($row->logouticon)) {
+					$iconPath = $row->logouticon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['menuLogoutIcon'] = Uri::base() . $iconPath;
 				} else {
-					$item[ 'menuLogoutIcon' ] = "";
+					$item['menuLogoutIcon'] = "";
 				}
+
 			}
 
 			$items[] = $item;
