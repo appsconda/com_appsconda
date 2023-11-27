@@ -3376,6 +3376,16 @@ class MobileappapiController extends FormController {
 			$content = trim( $content );
 			$content = htmlspecialchars( $content );
 			$image = Uri::base() . $result[ 'image' ];
+			$finalimage = '';
+			if ( !empty( $result[ 'image' ] ) ) {
+					$finalimage = $image;
+			}
+			$reg_url = $result[ 'registration_handle_url' ];
+			if (empty($reg_url)) {
+			    $reg_url_final = Uri::base() ."index.php?option=com_appsconda&view=mobileappapi&task=mobileappapi.mobileappeventregistrationapi&eventid=". $result[ 'id' ];
+            } else {
+			    $reg_url_final = $result[ 'registration_handle_url' ];
+            }
 			$items[] = [
 				'id' => $result[ 'id' ],
 				'title' => $result[ 'title' ],
@@ -3384,8 +3394,9 @@ class MobileappapiController extends FormController {
 				'description' => $content,
 				'cut_off_date' => $result[ 'cut_off_date' ],
 				'registration_start_date' => $result[ 'registration_start_date' ],
-				'image' => $image,
-				'price_text' => $result[ 'price_text' ]
+				'image' => $finalimage,
+				'price_text' => $result[ 'price_text' ],
+				'reg_url' => $reg_url_final
 			];
 		}
 		$queryforeventsnumber = $db->getQuery( true )->select( 'COUNT(*)' )->from( '#__eb_events' );
