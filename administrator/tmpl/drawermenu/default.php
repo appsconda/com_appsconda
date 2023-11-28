@@ -859,6 +859,49 @@ $wa->useScript('keepalive')
 
                 <div class="col-12 col-lg-4">
 				<fieldset id="fieldset-publishingdata" class="options-form">
+                         <legend>Login</legend>
+                         
+                         <div class="control-group">
+					<div class="control-label">
+						<?php echo $this->form->getLabel('loginshow'); ?>
+					</div>
+					<div class="controls">
+						<?php echo $this->form->getInput('loginshow'); ?>
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="control-label">
+						<?php echo $this->form->getLabel('mloginlabel'); ?>
+					</div>
+					<div class="controls">
+						<?php echo $this->form->getInput('loginlabel'); ?>
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="control-label">
+						<?php echo $this->form->getLabel('logincolor'); ?>
+					</div>
+					<div class="controls">
+						<?php echo $this->form->getInput('logincolor'); ?>
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="control-label">
+						<?php echo $this->form->getLabel('loginicon'); ?>
+					</div>
+					<div class="controls">
+						<?php echo $this->form->getInput('loginicon'); ?>
+					</div>
+				</div>
+
+				
+                         
+                         </fieldset>
+				
+</div>
+
+                <div class="col-12 col-lg-4">
+				<fieldset id="fieldset-publishingdata" class="options-form">
                          <legend>Image Above Menu (916px by 320px</legend>
                          
                          <div class="control-group">
