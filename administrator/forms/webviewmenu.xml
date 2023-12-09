@@ -5,52 +5,7 @@
        <field name="id" type="text" default="0" label="COM_APPSCONDA_FORM_LBL_DRAWERMENU_ID"
             readonly="true" class="readonly"
             description="JGLOBAL_FIELD_ID_DESC" /> 
-		
-		<field
-			name="menu1content"
-			type="textfield"
-			label="COM_APPSCONDA_WEBVIEWMENU_MENU1CONTENT_LBL"
-			description="COM_APPSCONDA_WEBVIEWMENU_MENU1CONTENT_DESC"
-			default=""
-			/>
-	
-		<field
-			name="menu1access"
-			type="list"
-			label="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_LBL"
-			description="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_DESC"
-			class="inputbox"
-			size="1"
-			default=""
-			>
-			<option value="false">No</option>
-			<option value="true">Yes</option>
-		</field>
-	
-		<field
-			name="menu1icon"
-			type="media"
-			label="COM_APPSCONDA_DRAWERMENU_MENU1ICON_LBL"
-			description="COM_APPSCONDA_DRAWERMENU_MENU1ICON_DESC"
-			default=""
-			/>
-	
-		<field
-			name="menu1color"
-			type="color"
-			label="COM_APPSCONDA_DRAWERMENU_MENU1COLOR_LBL"
-			description="COM_APPSCONDA_DRAWERMENU_MENU1COLOR_DESC"
-			default=""
-			/>
-	
-		<field
-			name="menu1label"
-			type="textfield"
-			label="COM_APPSCONDA_DRAWERMENU_MENU1LABEL_LBL"
-			description="COM_APPSCONDA_DRAWERMENU_MENU1LABEL_DESC"
-			default=""
-			/>
-	
+
 		<field
 			name="menu1show"
 			type="list"
@@ -64,6 +19,802 @@
 			<option value="false">No</option>
 			<option value="true">Yes</option>
 		</field>
+		<field
+			name="menu1label"
+			type="textfield"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1LABEL_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1LABEL_DESC"
+			default=""
+			/>
+		<field
+			name="menu1color"
+			type="color"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1COLOR_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1COLOR_DESC"
+			default=""
+			/>
+		<field
+			name="menu1icon"
+			type="media"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1ICON_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1ICON_DESC"
+			default=""
+			/>
+		<field
+			name="menu1access"
+			type="list"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_DESC"
+			class="inputbox"
+			size="1"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		<field
+			name="menu1content"
+			type="textfield"
+			label="COM_APPSCONDA_WEBVIEWMENU_MENU1CONTENT_LBL"
+			description="COM_APPSCONDA_WEBVIEWMENU_MENU1CONTENT_DESC"
+			default=""
+			/>
+
+		<field
+			name="menu2show"
+			type="list"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1SHOW_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1SHOW_DESC"
+			class="inputbox"
+			size="1"
+			required="true"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		<field
+			name="menu2label"
+			type="textfield"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1LABEL_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1LABEL_DESC"
+			default=""
+			/>
+		<field
+			name="menu2color"
+			type="color"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1COLOR_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1COLOR_DESC"
+			default=""
+			/>
+		<field
+			name="menu2icon"
+			type="media"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1ICON_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1ICON_DESC"
+			default=""
+			/>
+		<field
+			name="menu2access"
+			type="list"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_DESC"
+			class="inputbox"
+			size="1"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		<field
+			name="menu2content"
+			type="textfield"
+			label="COM_APPSCONDA_WEBVIEWMENU_MENU1CONTENT_LBL"
+			description="COM_APPSCONDA_WEBVIEWMENU_MENU1CONTENT_DESC"
+			default=""
+			/>
+		
+		<field
+			name="menu3show"
+			type="list"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1SHOW_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1SHOW_DESC"
+			class="inputbox"
+			size="1"
+			required="true"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		<field
+			name="menu3label"
+			type="textfield"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1LABEL_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1LABEL_DESC"
+			default=""
+			/>
+		<field
+			name="menu3color"
+			type="color"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1COLOR_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1COLOR_DESC"
+			default=""
+			/>
+		<field
+			name="menu3icon"
+			type="media"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1ICON_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1ICON_DESC"
+			default=""
+			/>
+		<field
+			name="menu3access"
+			type="list"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_DESC"
+			class="inputbox"
+			size="1"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		<field
+			name="menu3content"
+			type="textfield"
+			label="COM_APPSCONDA_WEBVIEWMENU_MENU1CONTENT_LBL"
+			description="COM_APPSCONDA_WEBVIEWMENU_MENU1CONTENT_DESC"
+			default=""
+			/>
+		
+		<field
+			name="menu4show"
+			type="list"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1SHOW_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1SHOW_DESC"
+			class="inputbox"
+			size="1"
+			required="true"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		<field
+			name="menu4label"
+			type="textfield"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1LABEL_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1LABEL_DESC"
+			default=""
+			/>
+		<field
+			name="menu4color"
+			type="color"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1COLOR_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1COLOR_DESC"
+			default=""
+			/>
+		<field
+			name="menu4icon"
+			type="media"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1ICON_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1ICON_DESC"
+			default=""
+			/>
+		<field
+			name="menu4access"
+			type="list"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_DESC"
+			class="inputbox"
+			size="1"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		<field
+			name="menu4content"
+			type="textfield"
+			label="COM_APPSCONDA_WEBVIEWMENU_MENU1CONTENT_LBL"
+			description="COM_APPSCONDA_WEBVIEWMENU_MENU1CONTENT_DESC"
+			default=""
+			/>
+		
+		<field
+			name="menu5show"
+			type="list"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1SHOW_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1SHOW_DESC"
+			class="inputbox"
+			size="1"
+			required="true"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		<field
+			name="menu5label"
+			type="textfield"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1LABEL_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1LABEL_DESC"
+			default=""
+			/>
+		<field
+			name="menu5color"
+			type="color"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1COLOR_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1COLOR_DESC"
+			default=""
+			/>
+		<field
+			name="menu5icon"
+			type="media"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1ICON_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1ICON_DESC"
+			default=""
+			/>
+		<field
+			name="menu5access"
+			type="list"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_DESC"
+			class="inputbox"
+			size="1"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		<field
+			name="menu5content"
+			type="textfield"
+			label="COM_APPSCONDA_WEBVIEWMENU_MENU1CONTENT_LBL"
+			description="COM_APPSCONDA_WEBVIEWMENU_MENU1CONTENT_DESC"
+			default=""
+			/>
+		
+		<field
+			name="menu6show"
+			type="list"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1SHOW_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1SHOW_DESC"
+			class="inputbox"
+			size="1"
+			required="true"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		<field
+			name="menu6label"
+			type="textfield"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1LABEL_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1LABEL_DESC"
+			default=""
+			/>
+		<field
+			name="menu6color"
+			type="color"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1COLOR_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1COLOR_DESC"
+			default=""
+			/>
+		<field
+			name="menu6icon"
+			type="media"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1ICON_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1ICON_DESC"
+			default=""
+			/>
+		<field
+			name="menu6access"
+			type="list"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_DESC"
+			class="inputbox"
+			size="1"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		<field
+			name="menu6content"
+			type="textfield"
+			label="COM_APPSCONDA_WEBVIEWMENU_MENU1CONTENT_LBL"
+			description="COM_APPSCONDA_WEBVIEWMENU_MENU1CONTENT_DESC"
+			default=""
+			/>
+		
+		<field
+			name="menu7show"
+			type="list"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1SHOW_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1SHOW_DESC"
+			class="inputbox"
+			size="1"
+			required="true"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		<field
+			name="menu7label"
+			type="textfield"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1LABEL_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1LABEL_DESC"
+			default=""
+			/>
+		<field
+			name="menu7color"
+			type="color"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1COLOR_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1COLOR_DESC"
+			default=""
+			/>
+		<field
+			name="menu7icon"
+			type="media"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1ICON_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1ICON_DESC"
+			default=""
+			/>
+		<field
+			name="menu7access"
+			type="list"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_DESC"
+			class="inputbox"
+			size="1"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		<field
+			name="menu7content"
+			type="textfield"
+			label="COM_APPSCONDA_WEBVIEWMENU_MENU1CONTENT_LBL"
+			description="COM_APPSCONDA_WEBVIEWMENU_MENU1CONTENT_DESC"
+			default=""
+			/>
+		
+		<field
+			name="menu8show"
+			type="list"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1SHOW_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1SHOW_DESC"
+			class="inputbox"
+			size="1"
+			required="true"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		<field
+			name="menu8label"
+			type="textfield"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1LABEL_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1LABEL_DESC"
+			default=""
+			/>
+		<field
+			name="menu8color"
+			type="color"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1COLOR_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1COLOR_DESC"
+			default=""
+			/>
+		<field
+			name="menu8icon"
+			type="media"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1ICON_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1ICON_DESC"
+			default=""
+			/>
+		<field
+			name="menu8access"
+			type="list"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_DESC"
+			class="inputbox"
+			size="1"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		<field
+			name="menu8content"
+			type="textfield"
+			label="COM_APPSCONDA_WEBVIEWMENU_MENU1CONTENT_LBL"
+			description="COM_APPSCONDA_WEBVIEWMENU_MENU1CONTENT_DESC"
+			default=""
+			/>
+		
+		<field
+			name="menu9show"
+			type="list"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1SHOW_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1SHOW_DESC"
+			class="inputbox"
+			size="1"
+			required="true"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		<field
+			name="menu9label"
+			type="textfield"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1LABEL_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1LABEL_DESC"
+			default=""
+			/>
+		<field
+			name="menu9color"
+			type="color"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1COLOR_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1COLOR_DESC"
+			default=""
+			/>
+		<field
+			name="menu9icon"
+			type="media"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1ICON_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1ICON_DESC"
+			default=""
+			/>
+		<field
+			name="menu9access"
+			type="list"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_DESC"
+			class="inputbox"
+			size="1"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		<field
+			name="menu9content"
+			type="textfield"
+			label="COM_APPSCONDA_WEBVIEWMENU_MENU1CONTENT_LBL"
+			description="COM_APPSCONDA_WEBVIEWMENU_MENU1CONTENT_DESC"
+			default=""
+			/>
+		
+		<field
+			name="menu10show"
+			type="list"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1SHOW_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1SHOW_DESC"
+			class="inputbox"
+			size="1"
+			required="true"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		<field
+			name="menu10label"
+			type="textfield"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1LABEL_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1LABEL_DESC"
+			default=""
+			/>
+		<field
+			name="menu10color"
+			type="color"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1COLOR_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1COLOR_DESC"
+			default=""
+			/>
+		<field
+			name="menu10icon"
+			type="media"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1ICON_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1ICON_DESC"
+			default=""
+			/>
+		<field
+			name="menu10access"
+			type="list"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_DESC"
+			class="inputbox"
+			size="1"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		<field
+			name="menu10content"
+			type="textfield"
+			label="COM_APPSCONDA_WEBVIEWMENU_MENU1CONTENT_LBL"
+			description="COM_APPSCONDA_WEBVIEWMENU_MENU1CONTENT_DESC"
+			default=""
+			/>
+		
+		<field
+			name="menu11show"
+			type="list"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1SHOW_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1SHOW_DESC"
+			class="inputbox"
+			size="1"
+			required="true"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		<field
+			name="menu11label"
+			type="textfield"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1LABEL_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1LABEL_DESC"
+			default=""
+			/>
+		<field
+			name="menu11color"
+			type="color"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1COLOR_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1COLOR_DESC"
+			default=""
+			/>
+		<field
+			name="menu11icon"
+			type="media"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1ICON_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1ICON_DESC"
+			default=""
+			/>
+		<field
+			name="menu11access"
+			type="list"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_DESC"
+			class="inputbox"
+			size="1"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		<field
+			name="menu11content"
+			type="textfield"
+			label="COM_APPSCONDA_WEBVIEWMENU_MENU1CONTENT_LBL"
+			description="COM_APPSCONDA_WEBVIEWMENU_MENU1CONTENT_DESC"
+			default=""
+			/>
+		
+		<field
+			name="menu12show"
+			type="list"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1SHOW_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1SHOW_DESC"
+			class="inputbox"
+			size="1"
+			required="true"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		<field
+			name="menu12label"
+			type="textfield"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1LABEL_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1LABEL_DESC"
+			default=""
+			/>
+		<field
+			name="menu12color"
+			type="color"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1COLOR_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1COLOR_DESC"
+			default=""
+			/>
+		<field
+			name="menu12icon"
+			type="media"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1ICON_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1ICON_DESC"
+			default=""
+			/>
+		<field
+			name="menu12access"
+			type="list"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_DESC"
+			class="inputbox"
+			size="1"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		<field
+			name="menu12content"
+			type="textfield"
+			label="COM_APPSCONDA_WEBVIEWMENU_MENU1CONTENT_LBL"
+			description="COM_APPSCONDA_WEBVIEWMENU_MENU1CONTENT_DESC"
+			default=""
+			/>
+		
+		<field
+			name="menu13show"
+			type="list"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1SHOW_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1SHOW_DESC"
+			class="inputbox"
+			size="1"
+			required="true"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		<field
+			name="menu13label"
+			type="textfield"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1LABEL_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1LABEL_DESC"
+			default=""
+			/>
+		<field
+			name="menu13color"
+			type="color"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1COLOR_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1COLOR_DESC"
+			default=""
+			/>
+		<field
+			name="menu13icon"
+			type="media"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1ICON_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1ICON_DESC"
+			default=""
+			/>
+		<field
+			name="menu13access"
+			type="list"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_DESC"
+			class="inputbox"
+			size="1"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		<field
+			name="menu13content"
+			type="textfield"
+			label="COM_APPSCONDA_WEBVIEWMENU_MENU1CONTENT_LBL"
+			description="COM_APPSCONDA_WEBVIEWMENU_MENU1CONTENT_DESC"
+			default=""
+			/>
+		
+		<field
+			name="menu14show"
+			type="list"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1SHOW_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1SHOW_DESC"
+			class="inputbox"
+			size="1"
+			required="true"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		<field
+			name="menu14label"
+			type="textfield"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1LABEL_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1LABEL_DESC"
+			default=""
+			/>
+		<field
+			name="menu14color"
+			type="color"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1COLOR_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1COLOR_DESC"
+			default=""
+			/>
+		<field
+			name="menu14icon"
+			type="media"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1ICON_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1ICON_DESC"
+			default=""
+			/>
+		<field
+			name="menu14access"
+			type="list"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_DESC"
+			class="inputbox"
+			size="1"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		<field
+			name="menu14content"
+			type="textfield"
+			label="COM_APPSCONDA_WEBVIEWMENU_MENU1CONTENT_LBL"
+			description="COM_APPSCONDA_WEBVIEWMENU_MENU1CONTENT_DESC"
+			default=""
+			/>
+		
+		<field
+			name="menu15show"
+			type="list"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1SHOW_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1SHOW_DESC"
+			class="inputbox"
+			size="1"
+			required="true"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		<field
+			name="menu15label"
+			type="textfield"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1LABEL_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1LABEL_DESC"
+			default=""
+			/>
+		<field
+			name="menu15color"
+			type="color"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1COLOR_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1COLOR_DESC"
+			default=""
+			/>
+		<field
+			name="menu15icon"
+			type="media"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1ICON_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1ICON_DESC"
+			default=""
+			/>
+		<field
+			name="menu15access"
+			type="list"
+			label="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_LBL"
+			description="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_DESC"
+			class="inputbox"
+			size="1"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+		<field
+			name="menu15content"
+			type="textfield"
+			label="COM_APPSCONDA_WEBVIEWMENU_MENU1CONTENT_LBL"
+			description="COM_APPSCONDA_WEBVIEWMENU_MENU1CONTENT_DESC"
+			default=""
+			/>
 
 	   
 	
