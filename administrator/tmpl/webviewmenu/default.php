@@ -83,10 +83,10 @@ $wa->useScript('keepalive')
 				</div>
 				<div class="control-group">
 					<div class="control-label">
-						<?php echo $this->form->getLabel('menu1contentid'); ?>
+						<?php echo $this->form->getLabel('menu1content'); ?>
 					</div>
 					<div class="controls">
-						<?php echo $this->form->getInput('menu1contentid'); ?>
+						<?php echo $this->form->getInput('menu1content'); ?>
 					</div>
 				</div>
                         
