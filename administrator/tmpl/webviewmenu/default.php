@@ -39,7 +39,7 @@ $wa->useScript('keepalive')
 				<div class="row">
 				<div class="col-12 col-lg-4">
                     <fieldset id="fieldset-publishingdata" class="options-form">
-                        <legend>Custom Page</legend>
+                        <legend>Webview Menu 01</legend>
                         
                         <div class="control-group">
 					<div class="control-label">
@@ -97,7 +97,7 @@ $wa->useScript('keepalive')
                 
                 <div class="col-12 col-lg-4">
                     <fieldset id="fieldset-publishingdata" class="options-form">
-                        <legend>Custom Page</legend>
+                        <legend>Webview Menu 01</legend>
                         
                         <div class="control-group">
 					<div class="control-label">
@@ -141,19 +141,19 @@ $wa->useScript('keepalive')
 				</div>
 				<div class="control-group">
 					<div class="control-label">
-						<?php echo $this->form->getLabel('menu2contentid'); ?>
+						<?php echo $this->form->getLabel('menu2content'); ?>
 					</div>
 					<div class="controls">
-						<?php echo $this->form->getInput('menu2contentid'); ?>
+						<?php echo $this->form->getInput('menu2content'); ?>
 					</div>
 				</div>
                         
-                        </fieldset>
+                    </fieldset>
                 </div>
                 
                 <div class="col-12 col-lg-4">
                     <fieldset id="fieldset-publishingdata" class="options-form">
-                        <legend>Articles Category</legend>
+                        <legend>Webview Menu 01</legend>
                         
                         <div class="control-group">
 					<div class="control-label">
@@ -197,14 +197,14 @@ $wa->useScript('keepalive')
 				</div>
 				<div class="control-group">
 					<div class="control-label">
-						<?php echo $this->form->getLabel('menu3contentid'); ?>
+						<?php echo $this->form->getLabel('menu3content'); ?>
 					</div>
 					<div class="controls">
-						<?php echo $this->form->getInput('menu3contentid'); ?>
+						<?php echo $this->form->getInput('menu3content'); ?>
 					</div>
 				</div>
                         
-                        </fieldset>
+                    </fieldset>
                 </div>
                 
                 </div>
@@ -212,9 +212,10 @@ $wa->useScript('keepalive')
                 
                 
                 <div class="row">
+				
 				<div class="col-12 col-lg-4">
                     <fieldset id="fieldset-publishingdata" class="options-form">
-                         <legend>Articles Category</legend>
+                        <legend>Webview Menu 01</legend>
                         
                         <div class="control-group">
 					<div class="control-label">
@@ -258,22 +259,22 @@ $wa->useScript('keepalive')
 				</div>
 				<div class="control-group">
 					<div class="control-label">
-						<?php echo $this->form->getLabel('menu4contentid'); ?>
+						<?php echo $this->form->getLabel('menu4content'); ?>
 					</div>
 					<div class="controls">
-						<?php echo $this->form->getInput('menu4contentid'); ?>
+						<?php echo $this->form->getInput('menu4content'); ?>
 					</div>
 				</div>
-				</fieldset>
                         
+                    </fieldset>
                 </div>
                 
                 
                 <div class="col-12 col-lg-4">
                     <fieldset id="fieldset-publishingdata" class="options-form">
-                         <legend>Article Categories</legend>
-                         
-                         <div class="control-group">
+                        <legend>Webview Menu 01</legend>
+                        
+                        <div class="control-group">
 					<div class="control-label">
 						<?php echo $this->form->getLabel('menu5show'); ?>
 					</div>
@@ -315,21 +316,22 @@ $wa->useScript('keepalive')
 				</div>
 				<div class="control-group">
 					<div class="control-label">
-						<?php echo $this->form->getLabel('menu5contentid'); ?>
+						<?php echo $this->form->getLabel('menu5content'); ?>
 					</div>
 					<div class="controls">
-						<?php echo $this->form->getInput('menu5contentid'); ?>
+						<?php echo $this->form->getInput('menu5content'); ?>
 					</div>
 				</div>
-				
-				</fieldset>
-				</div>
+                        
+                    </fieldset>
+                </div>
 				
 				
 				<div class="col-12 col-lg-4">
                     <fieldset id="fieldset-publishingdata" class="options-form">
-                         <legend>Contacts Category</legend>
-                         <div class="control-group">
+                        <legend>Webview Menu 01</legend>
+                        
+                        <div class="control-group">
 					<div class="control-label">
 						<?php echo $this->form->getLabel('menu6show'); ?>
 					</div>
@@ -371,14 +373,15 @@ $wa->useScript('keepalive')
 				</div>
 				<div class="control-group">
 					<div class="control-label">
-						<?php echo $this->form->getLabel('menu6contentid'); ?>
+						<?php echo $this->form->getLabel('menu6content'); ?>
 					</div>
 					<div class="controls">
-						<?php echo $this->form->getInput('menu6contentid'); ?>
+						<?php echo $this->form->getInput('menu6content'); ?>
 					</div>
 				</div>
-				</fieldset>
-				</div>
+                        
+                    </fieldset>
+                </div>
 				
 				
 				
@@ -391,11 +394,12 @@ $wa->useScript('keepalive')
 				
 				
 				<div class="row">
+				
 				<div class="col-12 col-lg-4">
                     <fieldset id="fieldset-publishingdata" class="options-form">
-                         <legend>Event Booking</legend>
-                         
-                         <div class="control-group">
+                        <legend>Webview Menu 01</legend>
+                        
+                        <div class="control-group">
 					<div class="control-label">
 						<?php echo $this->form->getLabel('menu7show'); ?>
 					</div>
@@ -437,101 +441,21 @@ $wa->useScript('keepalive')
 				</div>
 				<div class="control-group">
 					<div class="control-label">
-						<?php echo $this->form->getLabel('menu7contentid'); ?>
+						<?php echo $this->form->getLabel('menu7content'); ?>
 					</div>
 					<div class="controls">
-						<?php echo $this->form->getInput('menu7contentid'); ?>
+						<?php echo $this->form->getInput('menu7content'); ?>
 					</div>
 				</div>
-                         
-                     	</fieldset>
-				</div>
+                        
+                    </fieldset>
+                </div>
 				
 				<div class="col-12 col-lg-4">
                     <fieldset id="fieldset-publishingdata" class="options-form">
-                         <legend>Custom Pages</legend>
-                         
-                         <div class="control-group">
-					<div class="control-label">
-						<?php echo $this->form->getLabel('menucustompagesshow'); ?>
-					</div>
-					<div class="controls">
-						<?php echo $this->form->getInput('menucustompagesshow'); ?>
-					</div>
-				</div>
-				<div class="control-group">
-					<div class="control-label">
-						<?php echo $this->form->getLabel('menucustompageslabel'); ?>
-					</div>
-					<div class="controls">
-						<?php echo $this->form->getInput('menucustompageslabel'); ?>
-					</div>
-				</div>
-				<div class="control-group">
-					<div class="control-label">
-						<?php echo $this->form->getLabel('menucustompagescolor'); ?>
-					</div>
-					<div class="controls">
-						<?php echo $this->form->getInput('menucustompagescolor'); ?>
-					</div>
-				</div>
-				<div class="control-group">
-					<div class="control-label">
-						<?php echo $this->form->getLabel('menucustompagesicon'); ?>
-					</div>
-					<div class="controls">
-						<?php echo $this->form->getInput('menucustompagesicon'); ?>
-					</div>
-				</div>
-				<div class="control-group">
-					<div class="control-label">
-						<?php echo $this->form->getLabel('menucustompagesaccess'); ?>
-					</div>
-					<div class="controls">
-						<?php echo $this->form->getInput('menucustompagesaccess'); ?>
-					</div>
-				</div>
-				<div class="control-group">
-					<div class="control-label">
-						<?php echo $this->form->getLabel('menucustompagescontentid'); ?>
-					</div>
-					<div class="controls">
-						<?php echo $this->form->getInput('menucustompagescontentid'); ?>
-					</div>
-				</div>
-				<div class="control-group">
-					<div class="control-label">
-						<?php echo $this->form->getLabel('extrashow'); ?>
-					</div>
-					<div class="controls">
-						<?php echo $this->form->getInput('extrashow'); ?>
-					</div>
-				</div>
-				<div class="control-group">
-					<div class="control-label">
-						<?php echo $this->form->getLabel('extralabel'); ?>
-					</div>
-					<div class="controls">
-						<?php echo $this->form->getInput('extralabel'); ?>
-					</div>
-				</div>
-				<div class="control-group">
-					<div class="control-label">
-						<?php echo $this->form->getLabel('extraurl'); ?>
-					</div>
-					<div class="controls">
-						<?php echo $this->form->getInput('extraurl'); ?>
-					</div>
-				</div>
-                         
-                     	</fieldset>
-				</div>
-				
-				
-				<div class="col-12 col-lg-4">
-                    <fieldset id="fieldset-publishingdata" class="options-form">
-                         <legend>Eshop</legend>
-                    <div class="control-group">
+                        <legend>Webview Menu 01</legend>
+                        
+                        <div class="control-group">
 					<div class="control-label">
 						<?php echo $this->form->getLabel('menu8show'); ?>
 					</div>
@@ -573,30 +497,22 @@ $wa->useScript('keepalive')
 				</div>
 				<div class="control-group">
 					<div class="control-label">
-						<?php echo $this->form->getLabel('menu8contentid'); ?>
+						<?php echo $this->form->getLabel('menu8content'); ?>
 					</div>
 					<div class="controls">
-						<?php echo $this->form->getInput('menu8contentid'); ?>
+						<?php echo $this->form->getInput('menu8content'); ?>
 					</div>
 				</div>
+                        
                     </fieldset>
-				</div>
+                </div>
 				
 				
-				
-				
-				
-				
-				</div>    
-                         
-                         
-				
-				
-				<div class="row">
 				<div class="col-12 col-lg-4">
                     <fieldset id="fieldset-publishingdata" class="options-form">
-                         <legend>Kunena Forum</legend>
-                    <div class="control-group">
+                        <legend>Webview Menu 01</legend>
+                        
+                        <div class="control-group">
 					<div class="control-label">
 						<?php echo $this->form->getLabel('menu9show'); ?>
 					</div>
@@ -638,20 +554,33 @@ $wa->useScript('keepalive')
 				</div>
 				<div class="control-group">
 					<div class="control-label">
-						<?php echo $this->form->getLabel('menu9contentid'); ?>
+						<?php echo $this->form->getLabel('menu9content'); ?>
 					</div>
 					<div class="controls">
-						<?php echo $this->form->getInput('menu9contentid'); ?>
+						<?php echo $this->form->getInput('menu9content'); ?>
 					</div>
 				</div>
+                        
                     </fieldset>
-				</div>
+                </div>
+				
+				
+				
+				
+				
+				
+				</div>    
+                         
+                         
+				
+				
+				<div class="row">
 				
 				<div class="col-12 col-lg-4">
                     <fieldset id="fieldset-publishingdata" class="options-form">
-                         <legend>YouTube Channel</legend>
-                         
-                         <div class="control-group">
+                        <legend>Webview Menu 01</legend>
+                        
+                        <div class="control-group">
 					<div class="control-label">
 						<?php echo $this->form->getLabel('menu10show'); ?>
 					</div>
@@ -692,35 +621,22 @@ $wa->useScript('keepalive')
 					</div>
 				</div>
 				<div class="control-group">
-				    <div class="col-12 col-lg-6">
 					<div class="control-label">
-						<?php echo $this->form->getLabel('youtubeapikey'); ?>
+						<?php echo $this->form->getLabel('menu10content'); ?>
 					</div>
 					<div class="controls">
-						<?php echo $this->form->getInput('youtubeapikey'); ?>
-					</div>
-					</div>
-					<div class="col-12 col-lg-6">
-					<div class="control-label">
-						<?php echo $this->form->getLabel('youtubechannelid'); ?>
-					</div>
-					<div class="controls">
-						<?php echo $this->form->getInput('youtubechannelid'); ?>
+						<?php echo $this->form->getInput('menu10content'); ?>
 					</div>
 				</div>
+                        
+                    </fieldset>
+                </div>
 				
-				</div>
-                         
-                         </fieldset>
-				</div>
-				
-				
-				
-			<div class="col-12 col-lg-4">
+				<div class="col-12 col-lg-4">
                     <fieldset id="fieldset-publishingdata" class="options-form">
-                         <legend>SP Easy Image Gallery</legend>
-                         
-                         <div class="control-group">
+                        <legend>Webview Menu 01</legend>
+                        
+                        <div class="control-group">
 					<div class="control-label">
 						<?php echo $this->form->getLabel('menu11show'); ?>
 					</div>
@@ -762,15 +678,73 @@ $wa->useScript('keepalive')
 				</div>
 				<div class="control-group">
 					<div class="control-label">
-						<?php echo $this->form->getLabel('menu11contentid'); ?>
+						<?php echo $this->form->getLabel('menu11content'); ?>
 					</div>
 					<div class="controls">
-						<?php echo $this->form->getInput('menu11contentid'); ?>
+						<?php echo $this->form->getInput('menu11content'); ?>
 					</div>
 				</div>
-                         
-                         </fieldset>
+                        
+                    </fieldset>
+                </div>
+				
+				<div class="col-12 col-lg-4">
+                    <fieldset id="fieldset-publishingdata" class="options-form">
+                        <legend>Webview Menu 01</legend>
+                        
+                        <div class="control-group">
+					<div class="control-label">
+						<?php echo $this->form->getLabel('menu12show'); ?>
+					</div>
+					<div class="controls">
+						<?php echo $this->form->getInput('menu12show'); ?>
+					</div>
 				</div>
+				<div class="control-group">
+					<div class="control-label">
+						<?php echo $this->form->getLabel('menu12label'); ?>
+					</div>
+					<div class="controls">
+						<?php echo $this->form->getInput('menu12label'); ?>
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="control-label">
+						<?php echo $this->form->getLabel('menu12color'); ?>
+					</div>
+					<div class="controls">
+						<?php echo $this->form->getInput('menu12color'); ?>
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="control-label">
+						<?php echo $this->form->getLabel('menu12icon'); ?>
+					</div>
+					<div class="controls">
+						<?php echo $this->form->getInput('menu12icon'); ?>
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="control-label">
+						<?php echo $this->form->getLabel('menu12access'); ?>
+					</div>
+					<div class="controls">
+						<?php echo $this->form->getInput('menu12access'); ?>
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="control-label">
+						<?php echo $this->form->getLabel('menu12content'); ?>
+					</div>
+					<div class="controls">
+						<?php echo $this->form->getInput('menu12content'); ?>
+					</div>
+				</div>
+                        
+                    </fieldset>
+                </div>
+				
+			
 				
 				
 				
@@ -782,140 +756,174 @@ $wa->useScript('keepalive')
 			
 			
 			<div class="row">
+				
 				<div class="col-12 col-lg-4">
-				<fieldset id="fieldset-publishingdata" class="options-form">
-                         <legend>Helpdesk Pro</legend>
-                         
-                         <div class="control-group">
+                    <fieldset id="fieldset-publishingdata" class="options-form">
+                        <legend>Webview Menu 01</legend>
+                        
+                        <div class="control-group">
 					<div class="control-label">
-						<?php echo $this->form->getLabel('menusupportshow'); ?>
+						<?php echo $this->form->getLabel('menu13show'); ?>
 					</div>
 					<div class="controls">
-						<?php echo $this->form->getInput('menusupportshow'); ?>
+						<?php echo $this->form->getInput('menu13show'); ?>
 					</div>
 				</div>
 				<div class="control-group">
 					<div class="control-label">
-						<?php echo $this->form->getLabel('menusupportlabel'); ?>
+						<?php echo $this->form->getLabel('menu13label'); ?>
 					</div>
 					<div class="controls">
-						<?php echo $this->form->getInput('menusupportlabel'); ?>
+						<?php echo $this->form->getInput('menu13label'); ?>
 					</div>
 				</div>
 				<div class="control-group">
 					<div class="control-label">
-						<?php echo $this->form->getLabel('menusupportcolor'); ?>
+						<?php echo $this->form->getLabel('menu13color'); ?>
 					</div>
 					<div class="controls">
-						<?php echo $this->form->getInput('menusupportcolor'); ?>
+						<?php echo $this->form->getInput('menu13color'); ?>
 					</div>
 				</div>
 				<div class="control-group">
 					<div class="control-label">
-						<?php echo $this->form->getLabel('menusupporticon'); ?>
+						<?php echo $this->form->getLabel('menu13icon'); ?>
 					</div>
 					<div class="controls">
-						<?php echo $this->form->getInput('menusupporticon'); ?>
+						<?php echo $this->form->getInput('menu13icon'); ?>
 					</div>
 				</div>
 				<div class="control-group">
 					<div class="control-label">
-						<?php echo $this->form->getLabel('menusupportaccess'); ?>
+						<?php echo $this->form->getLabel('menu13access'); ?>
 					</div>
 					<div class="controls">
-						<?php echo $this->form->getInput('menusupportaccess'); ?>
+						<?php echo $this->form->getInput('menu13access'); ?>
 					</div>
 				</div>
 				<div class="control-group">
-				    <div class="col-12 col-lg-3">
 					<div class="control-label">
-						<?php echo $this->form->getLabel('supportcatid'); ?>
+						<?php echo $this->form->getLabel('menu13content'); ?>
 					</div>
 					<div class="controls">
-						<?php echo $this->form->getInput('supportcatid'); ?>
-					</div>
-					</div>
-					<div class="col-12 col-lg-3">
-					<div class="control-label">
-						<?php echo $this->form->getLabel('supportpriorityid'); ?>
-					</div>
-					<div class="controls">
-						<?php echo $this->form->getInput('supportpriorityid'); ?>
-					</div>
-					</div>
-					<div class="col-12 col-lg-3">
-					<div class="control-label">
-						<?php echo $this->form->getLabel('supportstatusid'); ?>
-					</div>
-					<div class="controls">
-						<?php echo $this->form->getInput('supportstatusid'); ?>
-					</div>
+						<?php echo $this->form->getInput('menu13content'); ?>
 					</div>
 				</div>
-                         
-                         </fieldset>
-				
-</div>
+                        
+                    </fieldset>
+                </div>
 
                 <div class="col-12 col-lg-4">
-				<fieldset id="fieldset-publishingdata" class="options-form">
-                         <legend>Login</legend>
-                         
-                         <div class="control-group">
+                    <fieldset id="fieldset-publishingdata" class="options-form">
+                        <legend>Webview Menu 01</legend>
+                        
+                        <div class="control-group">
 					<div class="control-label">
-						<?php echo $this->form->getLabel('loginshow'); ?>
+						<?php echo $this->form->getLabel('menu14show'); ?>
 					</div>
 					<div class="controls">
-						<?php echo $this->form->getInput('loginshow'); ?>
+						<?php echo $this->form->getInput('menu14show'); ?>
 					</div>
 				</div>
 				<div class="control-group">
 					<div class="control-label">
-						<?php echo $this->form->getLabel('mloginlabel'); ?>
+						<?php echo $this->form->getLabel('menu14label'); ?>
 					</div>
 					<div class="controls">
-						<?php echo $this->form->getInput('loginlabel'); ?>
+						<?php echo $this->form->getInput('menu14label'); ?>
 					</div>
 				</div>
 				<div class="control-group">
 					<div class="control-label">
-						<?php echo $this->form->getLabel('logincolor'); ?>
+						<?php echo $this->form->getLabel('menu14color'); ?>
 					</div>
 					<div class="controls">
-						<?php echo $this->form->getInput('logincolor'); ?>
+						<?php echo $this->form->getInput('menu14color'); ?>
 					</div>
 				</div>
 				<div class="control-group">
 					<div class="control-label">
-						<?php echo $this->form->getLabel('loginicon'); ?>
+						<?php echo $this->form->getLabel('menu14icon'); ?>
 					</div>
 					<div class="controls">
-						<?php echo $this->form->getInput('loginicon'); ?>
+						<?php echo $this->form->getInput('menu14icon'); ?>
 					</div>
 				</div>
-
-				
-                         
-                         </fieldset>
-				
-</div>
+				<div class="control-group">
+					<div class="control-label">
+						<?php echo $this->form->getLabel('menu14access'); ?>
+					</div>
+					<div class="controls">
+						<?php echo $this->form->getInput('menu14access'); ?>
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="control-label">
+						<?php echo $this->form->getLabel('menu14content'); ?>
+					</div>
+					<div class="controls">
+						<?php echo $this->form->getInput('menu14content'); ?>
+					</div>
+				</div>
+                        
+                    </fieldset>
+                </div>
 
                 <div class="col-12 col-lg-4">
-				<fieldset id="fieldset-publishingdata" class="options-form">
-                         <legend>Image Above Menu (916px by 320px</legend>
-                         
-                         <div class="control-group">
+                    <fieldset id="fieldset-publishingdata" class="options-form">
+                        <legend>Webview Menu 01</legend>
+                        
+                        <div class="control-group">
 					<div class="control-label">
-						<?php echo $this->form->getLabel('imageabovemenu'); ?>
+						<?php echo $this->form->getLabel('menu15show'); ?>
 					</div>
 					<div class="controls">
-						<?php echo $this->form->getInput('imageabovemenu'); ?>
+						<?php echo $this->form->getInput('menu15show'); ?>
 					</div>
 				</div>
-                         
-                         </fieldset>
-				
-</div> 
+				<div class="control-group">
+					<div class="control-label">
+						<?php echo $this->form->getLabel('menu15label'); ?>
+					</div>
+					<div class="controls">
+						<?php echo $this->form->getInput('menu15label'); ?>
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="control-label">
+						<?php echo $this->form->getLabel('menu15color'); ?>
+					</div>
+					<div class="controls">
+						<?php echo $this->form->getInput('menu15color'); ?>
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="control-label">
+						<?php echo $this->form->getLabel('menu15icon'); ?>
+					</div>
+					<div class="controls">
+						<?php echo $this->form->getInput('menu15icon'); ?>
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="control-label">
+						<?php echo $this->form->getLabel('menu15access'); ?>
+					</div>
+					<div class="controls">
+						<?php echo $this->form->getInput('menu15access'); ?>
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="control-label">
+						<?php echo $this->form->getLabel('menu15content'); ?>
+					</div>
+					<div class="controls">
+						<?php echo $this->form->getInput('menu15content'); ?>
+					</div>
+				</div>
+                        
+                    </fieldset>
+                </div> 
 				
 				</div>   
                          
