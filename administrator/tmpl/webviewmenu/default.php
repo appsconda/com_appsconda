@@ -12,7 +12,7 @@ defined('_JEXEC') or die;
 
 use Joomla\CMS\Language\Text;
 
-/** @var \Joomla\Component\Appsconda\Administrator\View\Drawermenu\HtmlView $this */
+/** @var \Joomla\Component\Appsconda\Administrator\View\Webviewmenu\HtmlView $this */
 
 /** @var Joomla\CMS\WebAsset\WebAssetManager $wa */
 $wa = $this->document->getWebAssetManager();
@@ -953,7 +953,7 @@ $wa->useScript('keepalive')
         <input type="hidden" name="task" value="" />
         <?php echo JHtml::_('form.token'); ?>
     </div>
-	<div id="validation-form-failed" data-backend-detail="drawermenu" data-message="<?php echo $this->escape(Text::_('JGLOBAL_VALIDATION_FORM_FAILED'));?>">
+	<div id="validation-form-failed" data-backend-detail="webviewmenu" data-message="<?php echo $this->escape(Text::_('JGLOBAL_VALIDATION_FORM_FAILED'));?>">
 	</div>
 </form>
 
