@@ -1831,9 +1831,10 @@ class MobileappapiController extends FormController {
 		$results = $db->loadObjectList();
 
 		$items = [];
+		$item = [];
 
 		foreach ( $results as $row ) {
-			$item = [];
+			
 
 			if ( $row->menu1show == "true" ) {
 				$item[ 'menuCustomShow' ] = true;
@@ -2215,6 +2216,41 @@ class MobileappapiController extends FormController {
 
 			}
 
+			
+		}
+		
+		$querywebviewmenus = $db->getQuery( true )->select( '*' )
+			->from( $db->quoteName( '#__appsconda_webviewmenus' ) );
+
+		$db->setQuery( $querywebviewmenus );
+
+		$resultswebviewmenus = $db->loadObjectList();
+		
+		foreach ( $resultswebviewmenus as $row ) {
+
+			if ( $row->menu1show == "true" ) {
+				$item[ 'webviewmenu1Show' ] = true;
+				$item[ 'webviewmenu1Label' ] = $row->menu1label;
+				$item[ 'webviewmenu1Color' ] = $row->menu1color;
+				if (!empty($row->menu1icon)) {
+					$iconPath = $row->menu1icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['webviewmenu1Icon'] = Uri::base() . $iconPath;
+				} else {
+					$item['webviewmenu1Icon'] = "";
+				}
+
+				$item[ 'webviewmenu1Access' ] = $row->menu1access == "true" ? true : ( $row->menu1access == "false" ? false : null );
+				$item[ 'webviewmenu1Url' ] = $row->menu1content;
+			}
 			$items[] = $item;
 		}
 
