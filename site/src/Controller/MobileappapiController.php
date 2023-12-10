@@ -2253,8 +2253,8 @@ class MobileappapiController extends FormController {
 			}
 			if ( $row->menu2show == "true" ) {
 				$item[ 'webviewmenu2Show' ] = true;
-				$item[ 'webviewmenu2Label' ] = $row->menu1label;
-				$item[ 'webviewmenu2Color' ] = $row->menu1color;
+				$item[ 'webviewmenu2Label' ] = $row->menu2label;
+				$item[ 'webviewmenu2Color' ] = $row->menu2color;
 				if (!empty($row->menu2icon)) {
 					$iconPath = $row->menu2icon;
 
