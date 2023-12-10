@@ -2297,6 +2297,282 @@ class MobileappapiController extends FormController {
 				$item[ 'webviewmenu3Access' ] = $row->menu3access == "true" ? true : ( $row->menu3access == "false" ? false : null );
 				$item[ 'webviewmenu3Url' ] = $row->menu3content;
 			}
+			if ( $row->menu4show == "true" ) {
+				$item[ 'webviewmenu4Show' ] = true;
+				$item[ 'webviewmenu4Label' ] = $row->menu4label;
+				$item[ 'webviewmenu4Color' ] = $row->menu4color;
+				if (!empty($row->menu4icon)) {
+					$iconPath = $row->menu4icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['webviewmenu4Icon'] = Uri::base() . $iconPath;
+				} else {
+					$item['webviewmenu4Icon'] = "";
+				}
+
+				$item[ 'webviewmenu4Access' ] = $row->menu4access == "true" ? true : ( $row->menu4access == "false" ? false : null );
+				$item[ 'webviewmenu4Url' ] = $row->menu4content;
+			}
+			if ( $row->menu5show == "true" ) {
+				$item[ 'webviewmenu5Show' ] = true;
+				$item[ 'webviewmenu5Label' ] = $row->menu5label;
+				$item[ 'webviewmenu5Color' ] = $row->menu5color;
+				if (!empty($row->menu5icon)) {
+					$iconPath = $row->menu5icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['webviewmenu5Icon'] = Uri::base() . $iconPath;
+				} else {
+					$item['webviewmenu5Icon'] = "";
+				}
+
+				$item[ 'webviewmenu5Access' ] = $row->menu5access == "true" ? true : ( $row->menu5access == "false" ? false : null );
+				$item[ 'webviewmenu5Url' ] = $row->menu5content;
+			}
+			if ( $row->menu6show == "true" ) {
+				$item[ 'webviewmenu6Show' ] = true;
+				$item[ 'webviewmenu6Label' ] = $row->menu6label;
+				$item[ 'webviewmenu6Color' ] = $row->menu6color;
+				if (!empty($row->menu6icon)) {
+					$iconPath = $row->menu6icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['webviewmenu6Icon'] = Uri::base() . $iconPath;
+				} else {
+					$item['webviewmenu6Icon'] = "";
+				}
+
+				$item[ 'webviewmenu6Access' ] = $row->menu6access == "true" ? true : ( $row->menu6access == "false" ? false : null );
+				$item[ 'webviewmenu6Url' ] = $row->menu6content;
+			}
+			if ( $row->menu7show == "true" ) {
+				$item[ 'webviewmenu7Show' ] = true;
+				$item[ 'webviewmenu7Label' ] = $row->menu7label;
+				$item[ 'webviewmenu7Color' ] = $row->menu7color;
+				if (!empty($row->menu7icon)) {
+					$iconPath = $row->menu7icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['webviewmenu7Icon'] = Uri::base() . $iconPath;
+				} else {
+					$item['webviewmenu7Icon'] = "";
+				}
+
+				$item[ 'webviewmenu7Access' ] = $row->menu7access == "true" ? true : ( $row->menu7access == "false" ? false : null );
+				$item[ 'webviewmenu7Url' ] = $row->menu7content;
+			}
+			if ( $row->menu8show == "true" ) {
+				$item[ 'webviewmenu8Show' ] = true;
+				$item[ 'webviewmenu8Label' ] = $row->menu8label;
+				$item[ 'webviewmenu8Color' ] = $row->menu8color;
+				if (!empty($row->menu8icon)) {
+					$iconPath = $row->menu8icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['webviewmenu8Icon'] = Uri::base() . $iconPath;
+				} else {
+					$item['webviewmenu8Icon'] = "";
+				}
+
+				$item[ 'webviewmenu8Access' ] = $row->menu8access == "true" ? true : ( $row->menu8access == "false" ? false : null );
+				$item[ 'webviewmenu8Url' ] = $row->menu8content;
+			}
+			if ( $row->menu9show == "true" ) {
+				$item[ 'webviewmenu9Show' ] = true;
+				$item[ 'webviewmenu9Label' ] = $row->menu9label;
+				$item[ 'webviewmenu9Color' ] = $row->menu9color;
+				if (!empty($row->menu9icon)) {
+					$iconPath = $row->menu9icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['webviewmenu9Icon'] = Uri::base() . $iconPath;
+				} else {
+					$item['webviewmenu9Icon'] = "";
+				}
+
+				$item[ 'webviewmenu9Access' ] = $row->menu9access == "true" ? true : ( $row->menu9access == "false" ? false : null );
+				$item[ 'webviewmenu9Url' ] = $row->menu9content;
+			}
+			if ( $row->menu10show == "true" ) {
+				$item[ 'webviewmenu10Show' ] = true;
+				$item[ 'webviewmenu10Label' ] = $row->menu10label;
+				$item[ 'webviewmenu10Color' ] = $row->menu10color;
+				if (!empty($row->menu10icon)) {
+					$iconPath = $row->menu10icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['webviewmenu10Icon'] = Uri::base() . $iconPath;
+				} else {
+					$item['webviewmenu10Icon'] = "";
+				}
+
+				$item[ 'webviewmenu10Access' ] = $row->menu10access == "true" ? true : ( $row->menu10access == "false" ? false : null );
+				$item[ 'webviewmenu10Url' ] = $row->menu10content;
+			}
+			if ( $row->menu11show == "true" ) {
+				$item[ 'webviewmenu11Show' ] = true;
+				$item[ 'webviewmenu11Label' ] = $row->menu11label;
+				$item[ 'webviewmenu11Color' ] = $row->menu11color;
+				if (!empty($row->menu11icon)) {
+					$iconPath = $row->menu11icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['webviewmenu11Icon'] = Uri::base() . $iconPath;
+				} else {
+					$item['webviewmenu11Icon'] = "";
+				}
+
+				$item[ 'webviewmenu11Access' ] = $row->menu11access == "true" ? true : ( $row->menu11access == "false" ? false : null );
+				$item[ 'webviewmenu11Url' ] = $row->menu11content;
+			}
+			if ( $row->menu12show == "true" ) {
+				$item[ 'webviewmenu12Show' ] = true;
+				$item[ 'webviewmenu12Label' ] = $row->menu12label;
+				$item[ 'webviewmenu12Color' ] = $row->menu12color;
+				if (!empty($row->menu12icon)) {
+					$iconPath = $row->menu12icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['webviewmenu12Icon'] = Uri::base() . $iconPath;
+				} else {
+					$item['webviewmenu12Icon'] = "";
+				}
+
+				$item[ 'webviewmenu12Access' ] = $row->menu12access == "true" ? true : ( $row->menu12access == "false" ? false : null );
+				$item[ 'webviewmenu12Url' ] = $row->menu12content;
+			}
+			if ( $row->menu13show == "true" ) {
+				$item[ 'webviewmenu13Show' ] = true;
+				$item[ 'webviewmenu13Label' ] = $row->menu13label;
+				$item[ 'webviewmenu13Color' ] = $row->menu13color;
+				if (!empty($row->menu13icon)) {
+					$iconPath = $row->menu13icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['webviewmenu13Icon'] = Uri::base() . $iconPath;
+				} else {
+					$item['webviewmenu13Icon'] = "";
+				}
+
+				$item[ 'webviewmenu13Access' ] = $row->menu13access == "true" ? true : ( $row->menu13access == "false" ? false : null );
+				$item[ 'webviewmenu13Url' ] = $row->menu13content;
+			}
+			if ( $row->menu14show == "true" ) {
+				$item[ 'webviewmenu14Show' ] = true;
+				$item[ 'webviewmenu14Label' ] = $row->menu14label;
+				$item[ 'webviewmenu14Color' ] = $row->menu14color;
+				if (!empty($row->menu14icon)) {
+					$iconPath = $row->menu14icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['webviewmenu14Icon'] = Uri::base() . $iconPath;
+				} else {
+					$item['webviewmenu14Icon'] = "";
+				}
+
+				$item[ 'webviewmenu14Access' ] = $row->menu14access == "true" ? true : ( $row->menu14access == "false" ? false : null );
+				$item[ 'webviewmenu14Url' ] = $row->menu14content;
+			}
+			if ( $row->menu15show == "true" ) {
+				$item[ 'webviewmenu15Show' ] = true;
+				$item[ 'webviewmenu15Label' ] = $row->menu15label;
+				$item[ 'webviewmenu15Color' ] = $row->menu15color;
+				if (!empty($row->menu15icon)) {
+					$iconPath = $row->menu15icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['webviewmenu15Icon'] = Uri::base() . $iconPath;
+				} else {
+					$item['webviewmenu15Icon'] = "";
+				}
+
+				$item[ 'webviewmenu15Access' ] = $row->menu15access == "true" ? true : ( $row->menu15access == "false" ? false : null );
+				$item[ 'webviewmenu15Url' ] = $row->menu15content;
+			}
 			
 			$items[] = $item;
 		}
