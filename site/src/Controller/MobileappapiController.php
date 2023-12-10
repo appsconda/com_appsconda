@@ -2251,6 +2251,30 @@ class MobileappapiController extends FormController {
 				$item[ 'webviewmenu1Access' ] = $row->menu1access == "true" ? true : ( $row->menu1access == "false" ? false : null );
 				$item[ 'webviewmenu1Url' ] = $row->menu1content;
 			}
+			if ( $row->menu2show == "true" ) {
+				$item[ 'webviewmenu2Show' ] = true;
+				$item[ 'webviewmenu2Label' ] = $row->menu1label;
+				$item[ 'webviewmenu2Color' ] = $row->menu1color;
+				if (!empty($row->menu2icon)) {
+					$iconPath = $row->menu2icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['webviewmenu2Icon'] = Uri::base() . $iconPath;
+				} else {
+					$item['webviewmenu2Icon'] = "";
+				}
+
+				$item[ 'webviewmenu2Access' ] = $row->menu2access == "true" ? true : ( $row->menu2access == "false" ? false : null );
+				$item[ 'webviewmenu2Url' ] = $row->menu2content;
+			}
+			
 			$items[] = $item;
 		}
 
