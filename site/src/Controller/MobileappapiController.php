@@ -1291,7 +1291,7 @@ class MobileappapiController extends FormController {
 
 	}
 	
-	function webviewmenu1url() {
+	function webviewmenuurl1() {
 
 		$jinput = Factory::getApplication()->input;
 		$userid = Factory::getApplication()->input->cookie->get( 'userid', '', 'INT' );
