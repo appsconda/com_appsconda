@@ -2328,7 +2328,6 @@ class MobileappapiController extends FormController {
 					$item['webviewmenu1Icon'] = "";
 				}
 
-				$item[ 'webviewmenu1Access' ] = $row->menu1access == "true" ? true : ( $row->menu1access == "false" ? false : null );
 				$item[ 'webviewmenu1Url' ] = $row->menu1content;
 			}
 			if ( $row->menu2show == "true" ) {
@@ -2351,7 +2350,6 @@ class MobileappapiController extends FormController {
 					$item['webviewmenu2Icon'] = "";
 				}
 
-				$item[ 'webviewmenu2Access' ] = $row->menu2access == "true" ? true : ( $row->menu2access == "false" ? false : null );
 				$item[ 'webviewmenu2Url' ] = $row->menu2content;
 			}
 			if ( $row->menu3show == "true" ) {
@@ -2374,7 +2372,6 @@ class MobileappapiController extends FormController {
 					$item['webviewmenu3Icon'] = "";
 				}
 
-				$item[ 'webviewmenu3Access' ] = $row->menu3access == "true" ? true : ( $row->menu3access == "false" ? false : null );
 				$item[ 'webviewmenu3Url' ] = $row->menu3content;
 			}
 			if ( $row->menu4show == "true" ) {
@@ -2397,7 +2394,6 @@ class MobileappapiController extends FormController {
 					$item['webviewmenu4Icon'] = "";
 				}
 
-				$item[ 'webviewmenu4Access' ] = $row->menu4access == "true" ? true : ( $row->menu4access == "false" ? false : null );
 				$item[ 'webviewmenu4Url' ] = $row->menu4content;
 			}
 			if ( $row->menu5show == "true" ) {
@@ -2420,7 +2416,6 @@ class MobileappapiController extends FormController {
 					$item['webviewmenu5Icon'] = "";
 				}
 
-				$item[ 'webviewmenu5Access' ] = $row->menu5access == "true" ? true : ( $row->menu5access == "false" ? false : null );
 				$item[ 'webviewmenu5Url' ] = $row->menu5content;
 			}
 			if ( $row->menu6show == "true" ) {
@@ -2443,7 +2438,6 @@ class MobileappapiController extends FormController {
 					$item['webviewmenu6Icon'] = "";
 				}
 
-				$item[ 'webviewmenu6Access' ] = $row->menu6access == "true" ? true : ( $row->menu6access == "false" ? false : null );
 				$item[ 'webviewmenu6Url' ] = $row->menu6content;
 			}
 			if ( $row->menu7show == "true" ) {
@@ -2466,7 +2460,6 @@ class MobileappapiController extends FormController {
 					$item['webviewmenu7Icon'] = "";
 				}
 
-				$item[ 'webviewmenu7Access' ] = $row->menu7access == "true" ? true : ( $row->menu7access == "false" ? false : null );
 				$item[ 'webviewmenu7Url' ] = $row->menu7content;
 			}
 			if ( $row->menu8show == "true" ) {
@@ -2489,7 +2482,6 @@ class MobileappapiController extends FormController {
 					$item['webviewmenu8Icon'] = "";
 				}
 
-				$item[ 'webviewmenu8Access' ] = $row->menu8access == "true" ? true : ( $row->menu8access == "false" ? false : null );
 				$item[ 'webviewmenu8Url' ] = $row->menu8content;
 			}
 			if ( $row->menu9show == "true" ) {
@@ -2512,7 +2504,6 @@ class MobileappapiController extends FormController {
 					$item['webviewmenu9Icon'] = "";
 				}
 
-				$item[ 'webviewmenu9Access' ] = $row->menu9access == "true" ? true : ( $row->menu9access == "false" ? false : null );
 				$item[ 'webviewmenu9Url' ] = $row->menu9content;
 			}
 			if ( $row->menu10show == "true" ) {
@@ -2535,7 +2526,6 @@ class MobileappapiController extends FormController {
 					$item['webviewmenu10Icon'] = "";
 				}
 
-				$item[ 'webviewmenu10Access' ] = $row->menu10access == "true" ? true : ( $row->menu10access == "false" ? false : null );
 				$item[ 'webviewmenu10Url' ] = $row->menu10content;
 			}
 			if ( $row->menu11show == "true" ) {
@@ -2558,7 +2548,6 @@ class MobileappapiController extends FormController {
 					$item['webviewmenu11Icon'] = "";
 				}
 
-				$item[ 'webviewmenu11Access' ] = $row->menu11access == "true" ? true : ( $row->menu11access == "false" ? false : null );
 				$item[ 'webviewmenu11Url' ] = $row->menu11content;
 			}
 			if ( $row->menu12show == "true" ) {
@@ -2581,7 +2570,6 @@ class MobileappapiController extends FormController {
 					$item['webviewmenu12Icon'] = "";
 				}
 
-				$item[ 'webviewmenu12Access' ] = $row->menu12access == "true" ? true : ( $row->menu12access == "false" ? false : null );
 				$item[ 'webviewmenu12Url' ] = $row->menu12content;
 			}
 			if ( $row->menu13show == "true" ) {
@@ -2604,7 +2592,6 @@ class MobileappapiController extends FormController {
 					$item['webviewmenu13Icon'] = "";
 				}
 
-				$item[ 'webviewmenu13Access' ] = $row->menu13access == "true" ? true : ( $row->menu13access == "false" ? false : null );
 				$item[ 'webviewmenu13Url' ] = $row->menu13content;
 			}
 			if ( $row->menu14show == "true" ) {
@@ -2627,7 +2614,6 @@ class MobileappapiController extends FormController {
 					$item['webviewmenu14Icon'] = "";
 				}
 
-				$item[ 'webviewmenu14Access' ] = $row->menu14access == "true" ? true : ( $row->menu14access == "false" ? false : null );
 				$item[ 'webviewmenu14Url' ] = $row->menu14content;
 			}
 			if ( $row->menu15show == "true" ) {
@@ -2650,7 +2636,6 @@ class MobileappapiController extends FormController {
 					$item['webviewmenu15Icon'] = "";
 				}
 
-				$item[ 'webviewmenu15Access' ] = $row->menu15access == "true" ? true : ( $row->menu15access == "false" ? false : null );
 				$item[ 'webviewmenu15Url' ] = $row->menu15content;
 			}
 			
