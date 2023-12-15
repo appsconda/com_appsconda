@@ -75,14 +75,6 @@ $wa->useScript('keepalive')
 				</div>
 				<div class="control-group">
 					<div class="control-label">
-						<?php echo $this->form->getLabel('menu1access'); ?>
-					</div>
-					<div class="controls">
-						<?php echo $this->form->getInput('menu1access'); ?>
-					</div>
-				</div>
-				<div class="control-group">
-					<div class="control-label">
 						<?php echo $this->form->getLabel('menu1content'); ?>
 					</div>
 					<div class="controls">
@@ -133,14 +125,6 @@ $wa->useScript('keepalive')
 				</div>
 				<div class="control-group">
 					<div class="control-label">
-						<?php echo $this->form->getLabel('menu2access'); ?>
-					</div>
-					<div class="controls">
-						<?php echo $this->form->getInput('menu2access'); ?>
-					</div>
-				</div>
-				<div class="control-group">
-					<div class="control-label">
 						<?php echo $this->form->getLabel('menu2content'); ?>
 					</div>
 					<div class="controls">
@@ -185,14 +169,6 @@ $wa->useScript('keepalive')
 					</div>
 					<div class="controls">
 						<?php echo $this->form->getInput('menu3icon'); ?>
-					</div>
-				</div>
-				<div class="control-group">
-					<div class="control-label">
-						<?php echo $this->form->getLabel('menu3access'); ?>
-					</div>
-					<div class="controls">
-						<?php echo $this->form->getInput('menu3access'); ?>
 					</div>
 				</div>
 				<div class="control-group">
@@ -251,14 +227,6 @@ $wa->useScript('keepalive')
 				</div>
 				<div class="control-group">
 					<div class="control-label">
-						<?php echo $this->form->getLabel('menu4access'); ?>
-					</div>
-					<div class="controls">
-						<?php echo $this->form->getInput('menu4access'); ?>
-					</div>
-				</div>
-				<div class="control-group">
-					<div class="control-label">
 						<?php echo $this->form->getLabel('menu4content'); ?>
 					</div>
 					<div class="controls">
@@ -308,14 +276,6 @@ $wa->useScript('keepalive')
 				</div>
 				<div class="control-group">
 					<div class="control-label">
-						<?php echo $this->form->getLabel('menu5access'); ?>
-					</div>
-					<div class="controls">
-						<?php echo $this->form->getInput('menu5access'); ?>
-					</div>
-				</div>
-				<div class="control-group">
-					<div class="control-label">
 						<?php echo $this->form->getLabel('menu5content'); ?>
 					</div>
 					<div class="controls">
@@ -361,14 +321,6 @@ $wa->useScript('keepalive')
 					</div>
 					<div class="controls">
 						<?php echo $this->form->getInput('menu6icon'); ?>
-					</div>
-				</div>
-				<div class="control-group">
-					<div class="control-label">
-						<?php echo $this->form->getLabel('menu6access'); ?>
-					</div>
-					<div class="controls">
-						<?php echo $this->form->getInput('menu6access'); ?>
 					</div>
 				</div>
 				<div class="control-group">
@@ -433,14 +385,6 @@ $wa->useScript('keepalive')
 				</div>
 				<div class="control-group">
 					<div class="control-label">
-						<?php echo $this->form->getLabel('menu7access'); ?>
-					</div>
-					<div class="controls">
-						<?php echo $this->form->getInput('menu7access'); ?>
-					</div>
-				</div>
-				<div class="control-group">
-					<div class="control-label">
 						<?php echo $this->form->getLabel('menu7content'); ?>
 					</div>
 					<div class="controls">
@@ -485,14 +429,6 @@ $wa->useScript('keepalive')
 					</div>
 					<div class="controls">
 						<?php echo $this->form->getInput('menu8icon'); ?>
-					</div>
-				</div>
-				<div class="control-group">
-					<div class="control-label">
-						<?php echo $this->form->getLabel('menu8access'); ?>
-					</div>
-					<div class="controls">
-						<?php echo $this->form->getInput('menu8access'); ?>
 					</div>
 				</div>
 				<div class="control-group">
@@ -542,14 +478,6 @@ $wa->useScript('keepalive')
 					</div>
 					<div class="controls">
 						<?php echo $this->form->getInput('menu9icon'); ?>
-					</div>
-				</div>
-				<div class="control-group">
-					<div class="control-label">
-						<?php echo $this->form->getLabel('menu9access'); ?>
-					</div>
-					<div class="controls">
-						<?php echo $this->form->getInput('menu9access'); ?>
 					</div>
 				</div>
 				<div class="control-group">
@@ -614,14 +542,6 @@ $wa->useScript('keepalive')
 				</div>
 				<div class="control-group">
 					<div class="control-label">
-						<?php echo $this->form->getLabel('menu10access'); ?>
-					</div>
-					<div class="controls">
-						<?php echo $this->form->getInput('menu10access'); ?>
-					</div>
-				</div>
-				<div class="control-group">
-					<div class="control-label">
 						<?php echo $this->form->getLabel('menu10content'); ?>
 					</div>
 					<div class="controls">
@@ -670,14 +590,6 @@ $wa->useScript('keepalive')
 				</div>
 				<div class="control-group">
 					<div class="control-label">
-						<?php echo $this->form->getLabel('menu11access'); ?>
-					</div>
-					<div class="controls">
-						<?php echo $this->form->getInput('menu11access'); ?>
-					</div>
-				</div>
-				<div class="control-group">
-					<div class="control-label">
 						<?php echo $this->form->getLabel('menu11content'); ?>
 					</div>
 					<div class="controls">
@@ -722,14 +634,6 @@ $wa->useScript('keepalive')
 					</div>
 					<div class="controls">
 						<?php echo $this->form->getInput('menu12icon'); ?>
-					</div>
-				</div>
-				<div class="control-group">
-					<div class="control-label">
-						<?php echo $this->form->getLabel('menu12access'); ?>
-					</div>
-					<div class="controls">
-						<?php echo $this->form->getInput('menu12access'); ?>
 					</div>
 				</div>
 				<div class="control-group">
@@ -795,14 +699,6 @@ $wa->useScript('keepalive')
 				</div>
 				<div class="control-group">
 					<div class="control-label">
-						<?php echo $this->form->getLabel('menu13access'); ?>
-					</div>
-					<div class="controls">
-						<?php echo $this->form->getInput('menu13access'); ?>
-					</div>
-				</div>
-				<div class="control-group">
-					<div class="control-label">
 						<?php echo $this->form->getLabel('menu13content'); ?>
 					</div>
 					<div class="controls">
@@ -851,14 +747,6 @@ $wa->useScript('keepalive')
 				</div>
 				<div class="control-group">
 					<div class="control-label">
-						<?php echo $this->form->getLabel('menu14access'); ?>
-					</div>
-					<div class="controls">
-						<?php echo $this->form->getInput('menu14access'); ?>
-					</div>
-				</div>
-				<div class="control-group">
-					<div class="control-label">
 						<?php echo $this->form->getLabel('menu14content'); ?>
 					</div>
 					<div class="controls">
@@ -903,14 +791,6 @@ $wa->useScript('keepalive')
 					</div>
 					<div class="controls">
 						<?php echo $this->form->getInput('menu15icon'); ?>
-					</div>
-				</div>
-				<div class="control-group">
-					<div class="control-label">
-						<?php echo $this->form->getLabel('menu15access'); ?>
-					</div>
-					<div class="controls">
-						<?php echo $this->form->getInput('menu15access'); ?>
 					</div>
 				</div>
 				<div class="control-group">
