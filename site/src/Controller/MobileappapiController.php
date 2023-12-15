@@ -1331,6 +1331,46 @@ class MobileappapiController extends FormController {
 		}
 	}
 
+	function webviewmenuurl2() {
+
+		$jinput = Factory::getApplication()->input;
+		$userid = Factory::getApplication()->input->cookie->get( 'userid', '', 'INT' );
+		$deviceidlogin = Factory::getApplication()->input->cookie->get( 'deviceidlogin', '', 'STRING' );
+		$passwordraw = Factory::getApplication()->input->cookie->get( 'password', '', 'STRING' );
+		$user = Factory::getUser();
+		
+		$db = Factory::getDbo();
+		$query = $db->getQuery(true)
+					->select($db->quoteName('menu2content'))
+					->from($db->quoteName('#__appsconda_webviewmenus')); // Add a condition to select the specific row you need
+
+		$db->setQuery($query);
+		$menu2content = $db->loadResult();
+
+		if ( $user->guest ) {
+
+			if ( !empty( $passwordraw ) && !empty( $userid ) && !empty( $deviceidlogin ) ) {
+
+				$options = array( 'remember' => true );
+				$credentials[ 'userid' ] = $userid;
+				$credentials[ 'password' ] = $passwordraw;
+				$credentials[ 'deviceidlogin' ] = $deviceidlogin;
+				$result = Factory::getApplication()->login( $credentials, $options );
+
+				if ( $result ) {
+					$this->setRedirect($menu2content);
+				} else {
+					$this->setRedirect($menu2content);
+				}
+
+			} else {
+				$this->setRedirect($menu2content);
+			}
+		} else {
+			$this->setRedirect($menu2content);
+		}
+	}
+
 	function mobileappeventregistrationapi() {
 
 		$jinput = Factory::getApplication()->input;
