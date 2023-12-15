@@ -40,18 +40,7 @@
 			description="COM_APPSCONDA_DRAWERMENU_MENU1ICON_DESC"
 			default=""
 			/>
-		<field
-			name="menu1access"
-			type="list"
-			label="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_LBL"
-			description="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_DESC"
-			class="inputbox"
-			size="1"
-			default=""
-			>
-			<option value="false">No</option>
-			<option value="true">Yes</option>
-		</field>
+		
 		<field
 			name="menu1content"
 			type="textfield"
@@ -94,18 +83,7 @@
 			description="COM_APPSCONDA_DRAWERMENU_MENU1ICON_DESC"
 			default=""
 			/>
-		<field
-			name="menu2access"
-			type="list"
-			label="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_LBL"
-			description="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_DESC"
-			class="inputbox"
-			size="1"
-			default=""
-			>
-			<option value="false">No</option>
-			<option value="true">Yes</option>
-		</field>
+		
 		<field
 			name="menu2content"
 			type="textfield"
@@ -148,18 +126,7 @@
 			description="COM_APPSCONDA_DRAWERMENU_MENU1ICON_DESC"
 			default=""
 			/>
-		<field
-			name="menu3access"
-			type="list"
-			label="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_LBL"
-			description="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_DESC"
-			class="inputbox"
-			size="1"
-			default=""
-			>
-			<option value="false">No</option>
-			<option value="true">Yes</option>
-		</field>
+		
 		<field
 			name="menu3content"
 			type="textfield"
@@ -202,18 +169,7 @@
 			description="COM_APPSCONDA_DRAWERMENU_MENU1ICON_DESC"
 			default=""
 			/>
-		<field
-			name="menu4access"
-			type="list"
-			label="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_LBL"
-			description="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_DESC"
-			class="inputbox"
-			size="1"
-			default=""
-			>
-			<option value="false">No</option>
-			<option value="true">Yes</option>
-		</field>
+		
 		<field
 			name="menu4content"
 			type="textfield"
@@ -256,18 +212,7 @@
 			description="COM_APPSCONDA_DRAWERMENU_MENU1ICON_DESC"
 			default=""
 			/>
-		<field
-			name="menu5access"
-			type="list"
-			label="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_LBL"
-			description="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_DESC"
-			class="inputbox"
-			size="1"
-			default=""
-			>
-			<option value="false">No</option>
-			<option value="true">Yes</option>
-		</field>
+		
 		<field
 			name="menu5content"
 			type="textfield"
@@ -310,18 +255,7 @@
 			description="COM_APPSCONDA_DRAWERMENU_MENU1ICON_DESC"
 			default=""
 			/>
-		<field
-			name="menu6access"
-			type="list"
-			label="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_LBL"
-			description="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_DESC"
-			class="inputbox"
-			size="1"
-			default=""
-			>
-			<option value="false">No</option>
-			<option value="true">Yes</option>
-		</field>
+		
 		<field
 			name="menu6content"
 			type="textfield"
@@ -364,18 +298,7 @@
 			description="COM_APPSCONDA_DRAWERMENU_MENU1ICON_DESC"
 			default=""
 			/>
-		<field
-			name="menu7access"
-			type="list"
-			label="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_LBL"
-			description="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_DESC"
-			class="inputbox"
-			size="1"
-			default=""
-			>
-			<option value="false">No</option>
-			<option value="true">Yes</option>
-		</field>
+		
 		<field
 			name="menu7content"
 			type="textfield"
@@ -418,18 +341,7 @@
 			description="COM_APPSCONDA_DRAWERMENU_MENU1ICON_DESC"
 			default=""
 			/>
-		<field
-			name="menu8access"
-			type="list"
-			label="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_LBL"
-			description="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_DESC"
-			class="inputbox"
-			size="1"
-			default=""
-			>
-			<option value="false">No</option>
-			<option value="true">Yes</option>
-		</field>
+		
 		<field
 			name="menu8content"
 			type="textfield"
@@ -472,18 +384,7 @@
 			description="COM_APPSCONDA_DRAWERMENU_MENU1ICON_DESC"
 			default=""
 			/>
-		<field
-			name="menu9access"
-			type="list"
-			label="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_LBL"
-			description="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_DESC"
-			class="inputbox"
-			size="1"
-			default=""
-			>
-			<option value="false">No</option>
-			<option value="true">Yes</option>
-		</field>
+		
 		<field
 			name="menu9content"
 			type="textfield"
@@ -526,18 +427,7 @@
 			description="COM_APPSCONDA_DRAWERMENU_MENU1ICON_DESC"
 			default=""
 			/>
-		<field
-			name="menu10access"
-			type="list"
-			label="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_LBL"
-			description="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_DESC"
-			class="inputbox"
-			size="1"
-			default=""
-			>
-			<option value="false">No</option>
-			<option value="true">Yes</option>
-		</field>
+		
 		<field
 			name="menu10content"
 			type="textfield"
@@ -580,18 +470,7 @@
 			description="COM_APPSCONDA_DRAWERMENU_MENU1ICON_DESC"
 			default=""
 			/>
-		<field
-			name="menu11access"
-			type="list"
-			label="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_LBL"
-			description="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_DESC"
-			class="inputbox"
-			size="1"
-			default=""
-			>
-			<option value="false">No</option>
-			<option value="true">Yes</option>
-		</field>
+		
 		<field
 			name="menu11content"
 			type="textfield"
@@ -634,18 +513,7 @@
 			description="COM_APPSCONDA_DRAWERMENU_MENU1ICON_DESC"
 			default=""
 			/>
-		<field
-			name="menu12access"
-			type="list"
-			label="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_LBL"
-			description="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_DESC"
-			class="inputbox"
-			size="1"
-			default=""
-			>
-			<option value="false">No</option>
-			<option value="true">Yes</option>
-		</field>
+		
 		<field
 			name="menu12content"
 			type="textfield"
@@ -688,18 +556,7 @@
 			description="COM_APPSCONDA_DRAWERMENU_MENU1ICON_DESC"
 			default=""
 			/>
-		<field
-			name="menu13access"
-			type="list"
-			label="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_LBL"
-			description="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_DESC"
-			class="inputbox"
-			size="1"
-			default=""
-			>
-			<option value="false">No</option>
-			<option value="true">Yes</option>
-		</field>
+		
 		<field
 			name="menu13content"
 			type="textfield"
@@ -742,18 +599,7 @@
 			description="COM_APPSCONDA_DRAWERMENU_MENU1ICON_DESC"
 			default=""
 			/>
-		<field
-			name="menu14access"
-			type="list"
-			label="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_LBL"
-			description="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_DESC"
-			class="inputbox"
-			size="1"
-			default=""
-			>
-			<option value="false">No</option>
-			<option value="true">Yes</option>
-		</field>
+		
 		<field
 			name="menu14content"
 			type="textfield"
@@ -796,18 +642,7 @@
 			description="COM_APPSCONDA_DRAWERMENU_MENU1ICON_DESC"
 			default=""
 			/>
-		<field
-			name="menu15access"
-			type="list"
-			label="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_LBL"
-			description="COM_APPSCONDA_DRAWERMENU_MENU1ACCESS_DESC"
-			class="inputbox"
-			size="1"
-			default=""
-			>
-			<option value="false">No</option>
-			<option value="true">Yes</option>
-		</field>
+		
 		<field
 			name="menu15content"
 			type="textfield"
