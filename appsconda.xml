@@ -7,7 +7,7 @@
     <author>AppsConda ApS</author>
     <authorEmail>support@appsconda.com</authorEmail>
     <authorUrl>https://appsconda.com</authorUrl>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <description>This is a Joomla component developed by AppsConda. This extension enables the Joomla website to power and drive the mobile app.</description>
     <namespace path="src">Joomla\Component\Appsconda</namespace>
 
@@ -38,6 +38,7 @@
         <submenu>
             <menu link="option=com_appsconda&amp;view=custompages" img="components/com_appsconda/assets/images/view-16x16-custompages.png">COM_APPSCONDA_TITLE_CUSTOMPAGES</menu>
 			<menu link="option=com_appsconda&amp;view=drawermenu&amp;layout=edit&amp;id=1" img="components/com_appsconda/assets/images/view-16x16-custompages.png">COM_APPSCONDA_TITLE_DRAWERMENUS</menu>
+			<menu link="option=com_appsconda&amp;view=webviewmenu&amp;layout=edit&amp;id=1" img="components/com_appsconda/assets/images/view-16x16-custompages.png">COM_APPSCONDA_TITLE_DRAWERMENUS_TWO</menu>
 			<menu link="option=com_appsconda&amp;view=mobileconfig&amp;layout=edit&amp;id=1" img="components/com_appsconda/assets/images/view-16x16-custompages.png">COM_APPSCONDA_TITLE_MOBILECONFIGS</menu>
 			<menu link="option=com_appsconda&amp;view=pushs" img="components/com_appsconda/assets/images/view-16x16-custompages.png">COM_APPSCONDA_TITLE_PUSHS</menu>
 			<menu link="option=com_appsconda&amp;view=mobiledevices" img="components/com_appsconda/assets/images/view-16x16-custompages.png">COM_APPSCONDA_TITLE_MOBILEDEVICES</menu>

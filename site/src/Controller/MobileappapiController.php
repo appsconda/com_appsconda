@@ -1290,6 +1290,594 @@ class MobileappapiController extends FormController {
 		jexit();
 
 	}
+	
+	function webviewmenuurl1() {
+
+		$jinput = Factory::getApplication()->input;
+		$userid = Factory::getApplication()->input->cookie->get( 'userid', '', 'INT' );
+		$deviceidlogin = Factory::getApplication()->input->cookie->get( 'deviceidlogin', '', 'STRING' );
+		$passwordraw = Factory::getApplication()->input->cookie->get( 'password', '', 'STRING' );
+		$user = Factory::getUser();
+		
+		$db = Factory::getDbo();
+		$query = $db->getQuery(true)
+					->select($db->quoteName('menu1content'))
+					->from($db->quoteName('#__appsconda_webviewmenus')); // Add a condition to select the specific row you need
+
+		$db->setQuery($query);
+		$menu1content = $db->loadResult();
+
+		if ( $user->guest ) {
+
+			if ( !empty( $passwordraw ) && !empty( $userid ) && !empty( $deviceidlogin ) ) {
+
+				$options = array( 'remember' => true );
+				$credentials[ 'userid' ] = $userid;
+				$credentials[ 'password' ] = $passwordraw;
+				$credentials[ 'deviceidlogin' ] = $deviceidlogin;
+				$result = Factory::getApplication()->login( $credentials, $options );
+
+				if ( $result ) {
+					$this->setRedirect($menu1content);
+				} else {
+					$this->setRedirect($menu1content);
+				}
+
+			} else {
+				$this->setRedirect($menu1content);
+			}
+		} else {
+			$this->setRedirect($menu1content);
+		}
+	}
+
+	function webviewmenuurl2() {
+
+		$jinput = Factory::getApplication()->input;
+		$userid = Factory::getApplication()->input->cookie->get( 'userid', '', 'INT' );
+		$deviceidlogin = Factory::getApplication()->input->cookie->get( 'deviceidlogin', '', 'STRING' );
+		$passwordraw = Factory::getApplication()->input->cookie->get( 'password', '', 'STRING' );
+		$user = Factory::getUser();
+		
+		$db = Factory::getDbo();
+		$query = $db->getQuery(true)
+					->select($db->quoteName('menu2content'))
+					->from($db->quoteName('#__appsconda_webviewmenus')); // Add a condition to select the specific row you need
+
+		$db->setQuery($query);
+		$menu2content = $db->loadResult();
+
+		if ( $user->guest ) {
+
+			if ( !empty( $passwordraw ) && !empty( $userid ) && !empty( $deviceidlogin ) ) {
+
+				$options = array( 'remember' => true );
+				$credentials[ 'userid' ] = $userid;
+				$credentials[ 'password' ] = $passwordraw;
+				$credentials[ 'deviceidlogin' ] = $deviceidlogin;
+				$result = Factory::getApplication()->login( $credentials, $options );
+
+				if ( $result ) {
+					$this->setRedirect($menu2content);
+				} else {
+					$this->setRedirect($menu2content);
+				}
+
+			} else {
+				$this->setRedirect($menu2content);
+			}
+		} else {
+			$this->setRedirect($menu2content);
+		}
+	}
+
+	function webviewmenuurl3() {
+
+		$jinput = Factory::getApplication()->input;
+		$userid = Factory::getApplication()->input->cookie->get( 'userid', '', 'INT' );
+		$deviceidlogin = Factory::getApplication()->input->cookie->get( 'deviceidlogin', '', 'STRING' );
+		$passwordraw = Factory::getApplication()->input->cookie->get( 'password', '', 'STRING' );
+		$user = Factory::getUser();
+		
+		$db = Factory::getDbo();
+		$query = $db->getQuery(true)
+					->select($db->quoteName('menu3content'))
+					->from($db->quoteName('#__appsconda_webviewmenus')); // Add a condition to select the specific row you need
+
+		$db->setQuery($query);
+		$menu3content = $db->loadResult();
+
+		if ( $user->guest ) {
+
+			if ( !empty( $passwordraw ) && !empty( $userid ) && !empty( $deviceidlogin ) ) {
+
+				$options = array( 'remember' => true );
+				$credentials[ 'userid' ] = $userid;
+				$credentials[ 'password' ] = $passwordraw;
+				$credentials[ 'deviceidlogin' ] = $deviceidlogin;
+				$result = Factory::getApplication()->login( $credentials, $options );
+
+				if ( $result ) {
+					$this->setRedirect($menu3content);
+				} else {
+					$this->setRedirect($menu3content);
+				}
+
+			} else {
+				$this->setRedirect($menu3content);
+			}
+		} else {
+			$this->setRedirect($menu3content);
+		}
+	}
+function webviewmenuurl4() {
+
+		$jinput = Factory::getApplication()->input;
+		$userid = Factory::getApplication()->input->cookie->get( 'userid', '', 'INT' );
+		$deviceidlogin = Factory::getApplication()->input->cookie->get( 'deviceidlogin', '', 'STRING' );
+		$passwordraw = Factory::getApplication()->input->cookie->get( 'password', '', 'STRING' );
+		$user = Factory::getUser();
+		
+		$db = Factory::getDbo();
+		$query = $db->getQuery(true)
+					->select($db->quoteName('menu4content'))
+					->from($db->quoteName('#__appsconda_webviewmenus')); // Add a condition to select the specific row you need
+
+		$db->setQuery($query);
+		$menu4content = $db->loadResult();
+
+		if ( $user->guest ) {
+
+			if ( !empty( $passwordraw ) && !empty( $userid ) && !empty( $deviceidlogin ) ) {
+
+				$options = array( 'remember' => true );
+				$credentials[ 'userid' ] = $userid;
+				$credentials[ 'password' ] = $passwordraw;
+				$credentials[ 'deviceidlogin' ] = $deviceidlogin;
+				$result = Factory::getApplication()->login( $credentials, $options );
+
+				if ( $result ) {
+					$this->setRedirect($menu4content);
+				} else {
+					$this->setRedirect($menu4content);
+				}
+
+			} else {
+				$this->setRedirect($menu4content);
+			}
+		} else {
+			$this->setRedirect($menu4content);
+		}
+	}
+function webviewmenuurl5() {
+
+		$jinput = Factory::getApplication()->input;
+		$userid = Factory::getApplication()->input->cookie->get( 'userid', '', 'INT' );
+		$deviceidlogin = Factory::getApplication()->input->cookie->get( 'deviceidlogin', '', 'STRING' );
+		$passwordraw = Factory::getApplication()->input->cookie->get( 'password', '', 'STRING' );
+		$user = Factory::getUser();
+		
+		$db = Factory::getDbo();
+		$query = $db->getQuery(true)
+					->select($db->quoteName('menu5content'))
+					->from($db->quoteName('#__appsconda_webviewmenus')); // Add a condition to select the specific row you need
+
+		$db->setQuery($query);
+		$menu5content = $db->loadResult();
+
+		if ( $user->guest ) {
+
+			if ( !empty( $passwordraw ) && !empty( $userid ) && !empty( $deviceidlogin ) ) {
+
+				$options = array( 'remember' => true );
+				$credentials[ 'userid' ] = $userid;
+				$credentials[ 'password' ] = $passwordraw;
+				$credentials[ 'deviceidlogin' ] = $deviceidlogin;
+				$result = Factory::getApplication()->login( $credentials, $options );
+
+				if ( $result ) {
+					$this->setRedirect($menu5content);
+				} else {
+					$this->setRedirect($menu5content);
+				}
+
+			} else {
+				$this->setRedirect($menu5content);
+			}
+		} else {
+			$this->setRedirect($menu5content);
+		}
+	}
+function webviewmenuurl6() {
+
+		$jinput = Factory::getApplication()->input;
+		$userid = Factory::getApplication()->input->cookie->get( 'userid', '', 'INT' );
+		$deviceidlogin = Factory::getApplication()->input->cookie->get( 'deviceidlogin', '', 'STRING' );
+		$passwordraw = Factory::getApplication()->input->cookie->get( 'password', '', 'STRING' );
+		$user = Factory::getUser();
+		
+		$db = Factory::getDbo();
+		$query = $db->getQuery(true)
+					->select($db->quoteName('menu6content'))
+					->from($db->quoteName('#__appsconda_webviewmenus')); // Add a condition to select the specific row you need
+
+		$db->setQuery($query);
+		$menu6content = $db->loadResult();
+
+		if ( $user->guest ) {
+
+			if ( !empty( $passwordraw ) && !empty( $userid ) && !empty( $deviceidlogin ) ) {
+
+				$options = array( 'remember' => true );
+				$credentials[ 'userid' ] = $userid;
+				$credentials[ 'password' ] = $passwordraw;
+				$credentials[ 'deviceidlogin' ] = $deviceidlogin;
+				$result = Factory::getApplication()->login( $credentials, $options );
+
+				if ( $result ) {
+					$this->setRedirect($menu6content);
+				} else {
+					$this->setRedirect($menu6content);
+				}
+
+			} else {
+				$this->setRedirect($menu6content);
+			}
+		} else {
+			$this->setRedirect($menu6content);
+		}
+	}
+function webviewmenuurl7() {
+
+		$jinput = Factory::getApplication()->input;
+		$userid = Factory::getApplication()->input->cookie->get( 'userid', '', 'INT' );
+		$deviceidlogin = Factory::getApplication()->input->cookie->get( 'deviceidlogin', '', 'STRING' );
+		$passwordraw = Factory::getApplication()->input->cookie->get( 'password', '', 'STRING' );
+		$user = Factory::getUser();
+		
+		$db = Factory::getDbo();
+		$query = $db->getQuery(true)
+					->select($db->quoteName('menu7content'))
+					->from($db->quoteName('#__appsconda_webviewmenus')); // Add a condition to select the specific row you need
+
+		$db->setQuery($query);
+		$menu7content = $db->loadResult();
+
+		if ( $user->guest ) {
+
+			if ( !empty( $passwordraw ) && !empty( $userid ) && !empty( $deviceidlogin ) ) {
+
+				$options = array( 'remember' => true );
+				$credentials[ 'userid' ] = $userid;
+				$credentials[ 'password' ] = $passwordraw;
+				$credentials[ 'deviceidlogin' ] = $deviceidlogin;
+				$result = Factory::getApplication()->login( $credentials, $options );
+
+				if ( $result ) {
+					$this->setRedirect($menu7content);
+				} else {
+					$this->setRedirect($menu7content);
+				}
+
+			} else {
+				$this->setRedirect($menu7content);
+			}
+		} else {
+			$this->setRedirect($menu7content);
+		}
+	}
+function webviewmenuurl8() {
+
+		$jinput = Factory::getApplication()->input;
+		$userid = Factory::getApplication()->input->cookie->get( 'userid', '', 'INT' );
+		$deviceidlogin = Factory::getApplication()->input->cookie->get( 'deviceidlogin', '', 'STRING' );
+		$passwordraw = Factory::getApplication()->input->cookie->get( 'password', '', 'STRING' );
+		$user = Factory::getUser();
+		
+		$db = Factory::getDbo();
+		$query = $db->getQuery(true)
+					->select($db->quoteName('menu8content'))
+					->from($db->quoteName('#__appsconda_webviewmenus')); // Add a condition to select the specific row you need
+
+		$db->setQuery($query);
+		$menu8content = $db->loadResult();
+
+		if ( $user->guest ) {
+
+			if ( !empty( $passwordraw ) && !empty( $userid ) && !empty( $deviceidlogin ) ) {
+
+				$options = array( 'remember' => true );
+				$credentials[ 'userid' ] = $userid;
+				$credentials[ 'password' ] = $passwordraw;
+				$credentials[ 'deviceidlogin' ] = $deviceidlogin;
+				$result = Factory::getApplication()->login( $credentials, $options );
+
+				if ( $result ) {
+					$this->setRedirect($menu8content);
+				} else {
+					$this->setRedirect($menu8content);
+				}
+
+			} else {
+				$this->setRedirect($menu8content);
+			}
+		} else {
+			$this->setRedirect($menu8content);
+		}
+	}
+function webviewmenuurl9() {
+
+		$jinput = Factory::getApplication()->input;
+		$userid = Factory::getApplication()->input->cookie->get( 'userid', '', 'INT' );
+		$deviceidlogin = Factory::getApplication()->input->cookie->get( 'deviceidlogin', '', 'STRING' );
+		$passwordraw = Factory::getApplication()->input->cookie->get( 'password', '', 'STRING' );
+		$user = Factory::getUser();
+		
+		$db = Factory::getDbo();
+		$query = $db->getQuery(true)
+					->select($db->quoteName('menu9content'))
+					->from($db->quoteName('#__appsconda_webviewmenus')); // Add a condition to select the specific row you need
+
+		$db->setQuery($query);
+		$menu9content = $db->loadResult();
+
+		if ( $user->guest ) {
+
+			if ( !empty( $passwordraw ) && !empty( $userid ) && !empty( $deviceidlogin ) ) {
+
+				$options = array( 'remember' => true );
+				$credentials[ 'userid' ] = $userid;
+				$credentials[ 'password' ] = $passwordraw;
+				$credentials[ 'deviceidlogin' ] = $deviceidlogin;
+				$result = Factory::getApplication()->login( $credentials, $options );
+
+				if ( $result ) {
+					$this->setRedirect($menu9content);
+				} else {
+					$this->setRedirect($menu9content);
+				}
+
+			} else {
+				$this->setRedirect($menu9content);
+			}
+		} else {
+			$this->setRedirect($menu9content);
+		}
+	}
+function webviewmenuurl10() {
+
+		$jinput = Factory::getApplication()->input;
+		$userid = Factory::getApplication()->input->cookie->get( 'userid', '', 'INT' );
+		$deviceidlogin = Factory::getApplication()->input->cookie->get( 'deviceidlogin', '', 'STRING' );
+		$passwordraw = Factory::getApplication()->input->cookie->get( 'password', '', 'STRING' );
+		$user = Factory::getUser();
+		
+		$db = Factory::getDbo();
+		$query = $db->getQuery(true)
+					->select($db->quoteName('menu10content'))
+					->from($db->quoteName('#__appsconda_webviewmenus')); // Add a condition to select the specific row you need
+
+		$db->setQuery($query);
+		$menu10content = $db->loadResult();
+
+		if ( $user->guest ) {
+
+			if ( !empty( $passwordraw ) && !empty( $userid ) && !empty( $deviceidlogin ) ) {
+
+				$options = array( 'remember' => true );
+				$credentials[ 'userid' ] = $userid;
+				$credentials[ 'password' ] = $passwordraw;
+				$credentials[ 'deviceidlogin' ] = $deviceidlogin;
+				$result = Factory::getApplication()->login( $credentials, $options );
+
+				if ( $result ) {
+					$this->setRedirect($menu10content);
+				} else {
+					$this->setRedirect($menu10content);
+				}
+
+			} else {
+				$this->setRedirect($menu10content);
+			}
+		} else {
+			$this->setRedirect($menu10content);
+		}
+	}
+function webviewmenuurl11() {
+
+		$jinput = Factory::getApplication()->input;
+		$userid = Factory::getApplication()->input->cookie->get( 'userid', '', 'INT' );
+		$deviceidlogin = Factory::getApplication()->input->cookie->get( 'deviceidlogin', '', 'STRING' );
+		$passwordraw = Factory::getApplication()->input->cookie->get( 'password', '', 'STRING' );
+		$user = Factory::getUser();
+		
+		$db = Factory::getDbo();
+		$query = $db->getQuery(true)
+					->select($db->quoteName('menu11content'))
+					->from($db->quoteName('#__appsconda_webviewmenus')); // Add a condition to select the specific row you need
+
+		$db->setQuery($query);
+		$menu11content = $db->loadResult();
+
+		if ( $user->guest ) {
+
+			if ( !empty( $passwordraw ) && !empty( $userid ) && !empty( $deviceidlogin ) ) {
+
+				$options = array( 'remember' => true );
+				$credentials[ 'userid' ] = $userid;
+				$credentials[ 'password' ] = $passwordraw;
+				$credentials[ 'deviceidlogin' ] = $deviceidlogin;
+				$result = Factory::getApplication()->login( $credentials, $options );
+
+				if ( $result ) {
+					$this->setRedirect($menu11content);
+				} else {
+					$this->setRedirect($menu11content);
+				}
+
+			} else {
+				$this->setRedirect($menu11content);
+			}
+		} else {
+			$this->setRedirect($menu11content);
+		}
+	}
+function webviewmenuurl12() {
+
+		$jinput = Factory::getApplication()->input;
+		$userid = Factory::getApplication()->input->cookie->get( 'userid', '', 'INT' );
+		$deviceidlogin = Factory::getApplication()->input->cookie->get( 'deviceidlogin', '', 'STRING' );
+		$passwordraw = Factory::getApplication()->input->cookie->get( 'password', '', 'STRING' );
+		$user = Factory::getUser();
+		
+		$db = Factory::getDbo();
+		$query = $db->getQuery(true)
+					->select($db->quoteName('menu12content'))
+					->from($db->quoteName('#__appsconda_webviewmenus')); // Add a condition to select the specific row you need
+
+		$db->setQuery($query);
+		$menu12content = $db->loadResult();
+
+		if ( $user->guest ) {
+
+			if ( !empty( $passwordraw ) && !empty( $userid ) && !empty( $deviceidlogin ) ) {
+
+				$options = array( 'remember' => true );
+				$credentials[ 'userid' ] = $userid;
+				$credentials[ 'password' ] = $passwordraw;
+				$credentials[ 'deviceidlogin' ] = $deviceidlogin;
+				$result = Factory::getApplication()->login( $credentials, $options );
+
+				if ( $result ) {
+					$this->setRedirect($menu12content);
+				} else {
+					$this->setRedirect($menu12content);
+				}
+
+			} else {
+				$this->setRedirect($menu12content);
+			}
+		} else {
+			$this->setRedirect($menu12content);
+		}
+	}
+function webviewmenuurl13() {
+
+		$jinput = Factory::getApplication()->input;
+		$userid = Factory::getApplication()->input->cookie->get( 'userid', '', 'INT' );
+		$deviceidlogin = Factory::getApplication()->input->cookie->get( 'deviceidlogin', '', 'STRING' );
+		$passwordraw = Factory::getApplication()->input->cookie->get( 'password', '', 'STRING' );
+		$user = Factory::getUser();
+		
+		$db = Factory::getDbo();
+		$query = $db->getQuery(true)
+					->select($db->quoteName('menu13content'))
+					->from($db->quoteName('#__appsconda_webviewmenus')); // Add a condition to select the specific row you need
+
+		$db->setQuery($query);
+		$menu13content = $db->loadResult();
+
+		if ( $user->guest ) {
+
+			if ( !empty( $passwordraw ) && !empty( $userid ) && !empty( $deviceidlogin ) ) {
+
+				$options = array( 'remember' => true );
+				$credentials[ 'userid' ] = $userid;
+				$credentials[ 'password' ] = $passwordraw;
+				$credentials[ 'deviceidlogin' ] = $deviceidlogin;
+				$result = Factory::getApplication()->login( $credentials, $options );
+
+				if ( $result ) {
+					$this->setRedirect($menu13content);
+				} else {
+					$this->setRedirect($menu13content);
+				}
+
+			} else {
+				$this->setRedirect($menu13content);
+			}
+		} else {
+			$this->setRedirect($menu13content);
+		}
+	}
+function webviewmenuurl14() {
+
+		$jinput = Factory::getApplication()->input;
+		$userid = Factory::getApplication()->input->cookie->get( 'userid', '', 'INT' );
+		$deviceidlogin = Factory::getApplication()->input->cookie->get( 'deviceidlogin', '', 'STRING' );
+		$passwordraw = Factory::getApplication()->input->cookie->get( 'password', '', 'STRING' );
+		$user = Factory::getUser();
+		
+		$db = Factory::getDbo();
+		$query = $db->getQuery(true)
+					->select($db->quoteName('menu14content'))
+					->from($db->quoteName('#__appsconda_webviewmenus')); // Add a condition to select the specific row you need
+
+		$db->setQuery($query);
+		$menu14content = $db->loadResult();
+
+		if ( $user->guest ) {
+
+			if ( !empty( $passwordraw ) && !empty( $userid ) && !empty( $deviceidlogin ) ) {
+
+				$options = array( 'remember' => true );
+				$credentials[ 'userid' ] = $userid;
+				$credentials[ 'password' ] = $passwordraw;
+				$credentials[ 'deviceidlogin' ] = $deviceidlogin;
+				$result = Factory::getApplication()->login( $credentials, $options );
+
+				if ( $result ) {
+					$this->setRedirect($menu14content);
+				} else {
+					$this->setRedirect($menu14content);
+				}
+
+			} else {
+				$this->setRedirect($menu14content);
+			}
+		} else {
+			$this->setRedirect($menu14content);
+		}
+	}
+function webviewmenuurl15() {
+
+		$jinput = Factory::getApplication()->input;
+		$userid = Factory::getApplication()->input->cookie->get( 'userid', '', 'INT' );
+		$deviceidlogin = Factory::getApplication()->input->cookie->get( 'deviceidlogin', '', 'STRING' );
+		$passwordraw = Factory::getApplication()->input->cookie->get( 'password', '', 'STRING' );
+		$user = Factory::getUser();
+		
+		$db = Factory::getDbo();
+		$query = $db->getQuery(true)
+					->select($db->quoteName('menu15content'))
+					->from($db->quoteName('#__appsconda_webviewmenus')); // Add a condition to select the specific row you need
+
+		$db->setQuery($query);
+		$menu15content = $db->loadResult();
+
+		if ( $user->guest ) {
+
+			if ( !empty( $passwordraw ) && !empty( $userid ) && !empty( $deviceidlogin ) ) {
+
+				$options = array( 'remember' => true );
+				$credentials[ 'userid' ] = $userid;
+				$credentials[ 'password' ] = $passwordraw;
+				$credentials[ 'deviceidlogin' ] = $deviceidlogin;
+				$result = Factory::getApplication()->login( $credentials, $options );
+
+				if ( $result ) {
+					$this->setRedirect($menu15content);
+				} else {
+					$this->setRedirect($menu15content);
+				}
+
+			} else {
+				$this->setRedirect($menu15content);
+			}
+		} else {
+			$this->setRedirect($menu15content);
+		}
+	}
 
 	function mobileappeventregistrationapi() {
 
@@ -1831,9 +2419,10 @@ class MobileappapiController extends FormController {
 		$results = $db->loadObjectList();
 
 		$items = [];
+		$item = [];
 
 		foreach ( $results as $row ) {
-			$item = [];
+			
 
 			if ( $row->menu1show == "true" ) {
 				$item[ 'menuCustomShow' ] = true;
@@ -2215,6 +2804,334 @@ class MobileappapiController extends FormController {
 
 			}
 
+			
+		}
+		
+		$querywebviewmenus = $db->getQuery( true )->select( '*' )
+			->from( $db->quoteName( '#__appsconda_webviewmenus' ) );
+
+		$db->setQuery( $querywebviewmenus );
+
+		$resultswebviewmenus = $db->loadObjectList();
+		
+		foreach ( $resultswebviewmenus as $row ) {
+
+			if ( $row->menu1show == "true" ) {
+				$item[ 'webviewmenu1Show' ] = true;
+				$item[ 'webviewmenu1Label' ] = $row->menu1label;
+				$item[ 'webviewmenu1Color' ] = $row->menu1color;
+				if (!empty($row->menu1icon)) {
+					$iconPath = $row->menu1icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['webviewmenu1Icon'] = Uri::base() . $iconPath;
+				} else {
+					$item['webviewmenu1Icon'] = "";
+				}
+
+			}
+			if ( $row->menu2show == "true" ) {
+				$item[ 'webviewmenu2Show' ] = true;
+				$item[ 'webviewmenu2Label' ] = $row->menu2label;
+				$item[ 'webviewmenu2Color' ] = $row->menu2color;
+				if (!empty($row->menu2icon)) {
+					$iconPath = $row->menu2icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['webviewmenu2Icon'] = Uri::base() . $iconPath;
+				} else {
+					$item['webviewmenu2Icon'] = "";
+				}
+
+			}
+			if ( $row->menu3show == "true" ) {
+				$item[ 'webviewmenu3Show' ] = true;
+				$item[ 'webviewmenu3Label' ] = $row->menu3label;
+				$item[ 'webviewmenu3Color' ] = $row->menu3color;
+				if (!empty($row->menu3icon)) {
+					$iconPath = $row->menu3icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['webviewmenu3Icon'] = Uri::base() . $iconPath;
+				} else {
+					$item['webviewmenu3Icon'] = "";
+				}
+
+			}
+			if ( $row->menu4show == "true" ) {
+				$item[ 'webviewmenu4Show' ] = true;
+				$item[ 'webviewmenu4Label' ] = $row->menu4label;
+				$item[ 'webviewmenu4Color' ] = $row->menu4color;
+				if (!empty($row->menu4icon)) {
+					$iconPath = $row->menu4icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['webviewmenu4Icon'] = Uri::base() . $iconPath;
+				} else {
+					$item['webviewmenu4Icon'] = "";
+				}
+
+			}
+			if ( $row->menu5show == "true" ) {
+				$item[ 'webviewmenu5Show' ] = true;
+				$item[ 'webviewmenu5Label' ] = $row->menu5label;
+				$item[ 'webviewmenu5Color' ] = $row->menu5color;
+				if (!empty($row->menu5icon)) {
+					$iconPath = $row->menu5icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['webviewmenu5Icon'] = Uri::base() . $iconPath;
+				} else {
+					$item['webviewmenu5Icon'] = "";
+				}
+
+			}
+			if ( $row->menu6show == "true" ) {
+				$item[ 'webviewmenu6Show' ] = true;
+				$item[ 'webviewmenu6Label' ] = $row->menu6label;
+				$item[ 'webviewmenu6Color' ] = $row->menu6color;
+				if (!empty($row->menu6icon)) {
+					$iconPath = $row->menu6icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['webviewmenu6Icon'] = Uri::base() . $iconPath;
+				} else {
+					$item['webviewmenu6Icon'] = "";
+				}
+
+			}
+			if ( $row->menu7show == "true" ) {
+				$item[ 'webviewmenu7Show' ] = true;
+				$item[ 'webviewmenu7Label' ] = $row->menu7label;
+				$item[ 'webviewmenu7Color' ] = $row->menu7color;
+				if (!empty($row->menu7icon)) {
+					$iconPath = $row->menu7icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['webviewmenu7Icon'] = Uri::base() . $iconPath;
+				} else {
+					$item['webviewmenu7Icon'] = "";
+				}
+
+			}
+			if ( $row->menu8show == "true" ) {
+				$item[ 'webviewmenu8Show' ] = true;
+				$item[ 'webviewmenu8Label' ] = $row->menu8label;
+				$item[ 'webviewmenu8Color' ] = $row->menu8color;
+				if (!empty($row->menu8icon)) {
+					$iconPath = $row->menu8icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['webviewmenu8Icon'] = Uri::base() . $iconPath;
+				} else {
+					$item['webviewmenu8Icon'] = "";
+				}
+
+			}
+			if ( $row->menu9show == "true" ) {
+				$item[ 'webviewmenu9Show' ] = true;
+				$item[ 'webviewmenu9Label' ] = $row->menu9label;
+				$item[ 'webviewmenu9Color' ] = $row->menu9color;
+				if (!empty($row->menu9icon)) {
+					$iconPath = $row->menu9icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['webviewmenu9Icon'] = Uri::base() . $iconPath;
+				} else {
+					$item['webviewmenu9Icon'] = "";
+				}
+
+			}
+			if ( $row->menu10show == "true" ) {
+				$item[ 'webviewmenu10Show' ] = true;
+				$item[ 'webviewmenu10Label' ] = $row->menu10label;
+				$item[ 'webviewmenu10Color' ] = $row->menu10color;
+				if (!empty($row->menu10icon)) {
+					$iconPath = $row->menu10icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['webviewmenu10Icon'] = Uri::base() . $iconPath;
+				} else {
+					$item['webviewmenu10Icon'] = "";
+				}
+
+			}
+			if ( $row->menu11show == "true" ) {
+				$item[ 'webviewmenu11Show' ] = true;
+				$item[ 'webviewmenu11Label' ] = $row->menu11label;
+				$item[ 'webviewmenu11Color' ] = $row->menu11color;
+				if (!empty($row->menu11icon)) {
+					$iconPath = $row->menu11icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['webviewmenu11Icon'] = Uri::base() . $iconPath;
+				} else {
+					$item['webviewmenu11Icon'] = "";
+				}
+
+			}
+			if ( $row->menu12show == "true" ) {
+				$item[ 'webviewmenu12Show' ] = true;
+				$item[ 'webviewmenu12Label' ] = $row->menu12label;
+				$item[ 'webviewmenu12Color' ] = $row->menu12color;
+				if (!empty($row->menu12icon)) {
+					$iconPath = $row->menu12icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['webviewmenu12Icon'] = Uri::base() . $iconPath;
+				} else {
+					$item['webviewmenu12Icon'] = "";
+				}
+
+			}
+			if ( $row->menu13show == "true" ) {
+				$item[ 'webviewmenu13Show' ] = true;
+				$item[ 'webviewmenu13Label' ] = $row->menu13label;
+				$item[ 'webviewmenu13Color' ] = $row->menu13color;
+				if (!empty($row->menu13icon)) {
+					$iconPath = $row->menu13icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['webviewmenu13Icon'] = Uri::base() . $iconPath;
+				} else {
+					$item['webviewmenu13Icon'] = "";
+				}
+
+			}
+			if ( $row->menu14show == "true" ) {
+				$item[ 'webviewmenu14Show' ] = true;
+				$item[ 'webviewmenu14Label' ] = $row->menu14label;
+				$item[ 'webviewmenu14Color' ] = $row->menu14color;
+				if (!empty($row->menu14icon)) {
+					$iconPath = $row->menu14icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['webviewmenu14Icon'] = Uri::base() . $iconPath;
+				} else {
+					$item['webviewmenu14Icon'] = "";
+				}
+
+			}
+			if ( $row->menu15show == "true" ) {
+				$item[ 'webviewmenu15Show' ] = true;
+				$item[ 'webviewmenu15Label' ] = $row->menu15label;
+				$item[ 'webviewmenu15Color' ] = $row->menu15color;
+				if (!empty($row->menu15icon)) {
+					$iconPath = $row->menu15icon;
+
+					// Check if '#' character exists in the string
+					$pos = strpos($iconPath, '#');
+
+					if ($pos !== false) {
+						// Extract the part of the string before '#'
+						$iconPath = substr($iconPath, 0, $pos);
+					}
+
+					$item['webviewmenu15Icon'] = Uri::base() . $iconPath;
+				} else {
+					$item['webviewmenu15Icon'] = "";
+				}
+
+			}
+			
 			$items[] = $item;
 		}
 
