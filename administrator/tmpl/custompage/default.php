@@ -11,6 +11,9 @@
 defined('_JEXEC') or die;
 
 use Joomla\CMS\Language\Text;
+use Joomla\CMS\Router\Route;
+use Joomla\CMS\HTML\HTMLHelper;
+
 
 /** @var \Joomla\Component\Appsconda\Administrator\View\Custompage\HtmlView $this */
 
@@ -21,7 +24,7 @@ $wa->useScript('keepalive')
    ->useScript('form.validate')
    ->useScript('com_contenthistory.admin-history-versions');
 ?>
-<form action="<?php echo JRoute::_('index.php?option=com_appsconda&layout=edit&id=' . $this->item->id); ?>" method="post" enctype="multipart/form-data" name="adminForm" id="adminForm" class="form-validate">
+<form action="<?php echo Route::_('index.php?option=com_appsconda&layout=edit&id=' . $this->item->id); ?>" method="post" enctype="multipart/form-data" name="adminForm" id="adminForm" class="form-validate">
 	<div class="row-fluid">
 		<div class="span10 form-horizontal">
             <fieldset class="adminform">
@@ -301,7 +304,7 @@ $wa->useScript('keepalive')
             </fieldset>
     	</div>
         <input type="hidden" name="task" value="" />
-        <?php echo JHtml::_('form.token'); ?>
+        <?php echo HTMLHelper::_('form.token'); ?>
     </div>
 	<div id="validation-form-failed" data-backend-detail="custompage" data-message="<?php echo $this->escape(Text::_('JGLOBAL_VALIDATION_FORM_FAILED'));?>">
 	</div>
