@@ -28,11 +28,7 @@ class AppscondaHelper
 	 */
 	public static function addSubmenu($name = '')
 	{
-		\JHtmlSidebar::addEntry(
-			Text::_('COM_APPSCONDA_TITLE_CUSTOMPAGES'),
-			'index.php?option=com_appsconda&view=custompages',
-			$name === 'custompages'
-		);
+		
 	}
 
 	/**
