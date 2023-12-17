@@ -15,7 +15,6 @@ defined('_JEXEC') or die;
 use JUser;
 use Form;
 use Exception;
-use JHtmlSidebar;
 use Joomla\CMS\MVC\View\HtmlView as BaseHtmlView;
 use Joomla\CMS\Factory;
 use Joomla\CMS\Language\Text;
@@ -198,11 +197,6 @@ class HtmlView extends BaseHtmlView
 			ToolbarHelper::preferences('com_appsconda');
 		}
 		
-		JHtmlSidebar::addFilter(
-			Text::_('JOPTION_SELECT_PUBLISHED'),
-			'filter_published',
-			HTMLHelper::_('select.options', HTMLHelper::_('jgrid.publishedOptions'), 'value', 'text', $this->state->get('filter.state'), true)
-		);
 	}
 
 	/**
