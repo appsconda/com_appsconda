@@ -576,6 +576,7 @@ $wa->useScript('keepalive')
       justify-content: left;
       border-bottom: 1px solid;
       margin-bottom: 20px;
+      background: #f1f1f1;
     }
 
     .tab {
