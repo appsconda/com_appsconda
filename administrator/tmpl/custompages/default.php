@@ -13,6 +13,7 @@ defined('_JEXEC') or die;
 use Joomla\CMS\HTML\HTMLHelper;
 use Joomla\CMS\Session\Session;
 use Joomla\CMS\Layout\LayoutHelper;
+use Joomla\CMS\Router\Route;
 ?>
 <?php $listOrder = $this->listOrder; ?>
 <?php $listDirn = $this->listDirn;
@@ -23,7 +24,7 @@ if ($listOrder && !empty($this->items))
 	HTMLHelper::_('draggablelist.draggable');
 }
 ?>
-<form action="<?php echo JRoute::_('index.php?option=com_appsconda&view=custompages'); ?>" method="post" name="adminForm" id="adminForm" data-list-order="<?php echo $listOrder; ?>">
+<form action="<?php echo Route::_('index.php?option=com_appsconda&view=custompages'); ?>" method="post" name="adminForm" id="adminForm" data-list-order="<?php echo $listOrder; ?>">
 	<?php if(!empty($this->sidebar)): ?>
 	<div id="j-sidebar-container" class="span2">
 		<?php echo $this->sidebar; ?>
@@ -77,7 +78,7 @@ if ($listOrder && !empty($this->items))
 							}
 							elseif (!$this->saveOrder)
 							{
-								$iconClass = ' inactive tip-top hasTooltip" title="' . JHtml::tooltipText('JORDERINGDISABLED');
+								$iconClass = ' inactive tip-top hasTooltip" title="' . HTMLHelper::tooltipText('JORDERINGDISABLED');
 							}
 							?>
 							<span class="sortable-handler<?php echo $iconClass; ?>">
@@ -92,7 +93,7 @@ if ($listOrder && !empty($this->items))
 							<?php echo HTMLHelper::_('grid.id', $i, $item->id); ?>
 						</td>
 						<td>
-							<a href="<?php echo JRoute::_('index.php?option=com_appsconda&task=custompage.edit&id=' . $item->id); ?>">
+							<a href="<?php echo Route::_('index.php?option=com_appsconda&task=custompage.edit&id=' . $item->id); ?>">
 								<?php echo $item->name; ?>
 							</a>
 						</td>
@@ -103,7 +104,7 @@ if ($listOrder && !empty($this->items))
 							<?php echo HTMLHelper::_('jgrid.published', $item->state, $i, 'custompages.', $canChange, 'cb'); ?>
 						</td>
 						<td>
-							<a href="<?php echo JRoute::_('index.php?option=com_appsconda&task=custompage.edit&id=' . $item->id); ?>">
+							<a href="<?php echo Route::_('index.php?option=com_appsconda&task=custompage.edit&id=' . $item->id); ?>">
 								<?php echo $item->id; ?>
 							</a>
 						</td>
