@@ -585,6 +585,7 @@ $wa->useScript('keepalive')
   font-size: 16px;
   font-weight: bold;
   padding: 12px 30px;
+  color: #1f3047;
 }
 
     .tab.active {
