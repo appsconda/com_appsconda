@@ -68,12 +68,12 @@ class CompilationController extends FormController {
 				echo "Attributes: " . $attr . "<br>";
 				if ( $width != 512 || $height != 512 ) {
 					$this->setRedirect( 'index.php?option=com_appsconda&view=compilation&layout=edit&id=' . $compilationId, false );
-					$app->enqueueMessage( Text::_( 'IMAGE_SIZE_APPICON_NOT_MEETS_REQUIREMENTS_COULD_NOT_SEND_FOR_COMPILATION' ), 'error' );
+					$app->enqueueMessage( Text::_( 'IMAGE_SIZE_APPICON_NOT_MEETS_REQUIREMENTS_COULD_NOT_SEND_FOR_COMPILATION' ), 'warning' );
 					//return;
 				}
 			} else {
 				$this->setRedirect( 'index.php?option=com_appsconda&view=compilation&layout=edit&id=' . $compilationId, false );
-				$app->enqueueMessage( Text::_( 'IMAGE_SIZE_APPICON_NOT_MEETS_REQUIREMENTS_COULD_NOT_SEND_FOR_COMPILATION' ), 'error' );
+				$app->enqueueMessage( Text::_( 'IMAGE_SIZE_APPICON_NOT_MEETS_REQUIREMENTS_COULD_NOT_SEND_FOR_COMPILATION' ), 'warning' );
 				//return;
 			}
 			
@@ -99,12 +99,12 @@ class CompilationController extends FormController {
 				echo "Attributes: " . $attr . "<br>";
 				if ( $width != 512 || $height != 512 ) {
 					$this->setRedirect( 'index.php?option=com_appsconda&view=compilation&layout=edit&id=' . $compilationId, false );
-					$app->enqueueMessage( Text::_( 'IMAGE_SIZE_SPLASH_NOT_MEETS_REQUIREMENTS_COULD_NOT_SEND_FOR_COMPILATION' ), 'error' );
+					$app->enqueueMessage( Text::_( 'IMAGE_SIZE_SPLASH_NOT_MEETS_REQUIREMENTS_COULD_NOT_SEND_FOR_COMPILATION' ), 'warning' );
 					//return;
 				}
 			} else {
 				$this->setRedirect( 'index.php?option=com_appsconda&view=compilation&layout=edit&id=' . $compilationId, false );
-				$app->enqueueMessage( Text::_( 'IMAGE_SIZE_SPLASH_NOT_MEETS_REQUIREMENTS_COULD_NOT_SEND_FOR_COMPILATION' ), 'error' );
+				$app->enqueueMessage( Text::_( 'IMAGE_SIZE_SPLASH_NOT_MEETS_REQUIREMENTS_COULD_NOT_SEND_FOR_COMPILATION' ), 'warning' );
 				//return;
 			}
 			
@@ -133,6 +133,7 @@ $uri = Uri::getInstance();
 // Get the host (domain part) of the URL
 $domain = $uri->getHost();
 
+
 // Your POST data
 $data = array(
     'appname'    => $appname,
@@ -141,24 +142,55 @@ $data = array(
     'entrypage'       => $entrypage,
     'appicon'  => $imageUrlappicon,
     'splashimage'         => $imageUrlsplashimage,
-    'splashbg'  => $splashbg
+    'splashbg'   => $splashbg
 );
 
 $jsonData = json_encode($data);
+//$jsonData = json_encode($data) . "}";
+
+// Decode the JSON back to PHP array
+$decodedData = json_decode($jsonData, true);
+
+// Check for JSON errors
+if (json_last_error() === JSON_ERROR_NONE) {
+    //$app->enqueueMessage( 'JSON data is in valid structure.', 'success' );
+} else {
+    $app->enqueueMessage('JSON data is invalid. Error: ' . json_last_error_msg(), 'error');
+}
+
+
 $http = HttpFactory::getHttp();
 $headers = array('Content-Type' => 'application/json');
-$response = $http->post('https://appsconda.com/index.php?option=com_appscompile&view=api&task=api.compileapp', $jsonData, $headers);
 
+try {
+    $response = $http->post('https://appsconda.com/index.php?option=com_appscompile&view=api&task=api.compileapp', $jsonData, $headers);
 
-// Decode the response
-$responseData = json_decode($response->body);
+    // Check if the HTTP request was successful
+    if (!$response || $response->code !== 200) {
+        $app->enqueueMessage('HTTP request failed or returned non-200 status', 'error');
+        return;
+    }
 
-// Output the response (You can process it further if needed)
-if ($responseData->status == 'success') {
-    $app->enqueueMessage( Text::_( 'APP_SENT_FOR_COMPILATION' ), 'message' );
-} else {
-    // Handle error
-    $app->enqueueMessage( Text::_( 'APP_NOT_SENT_FOR_COMPILATION' ), 'error' );
+    // Decode the response
+    $responseData = json_decode($response->body);
+
+    // Validate response format
+    if (!is_object($responseData)) {
+        $app->enqueueMessage('Invalid response format', 'error');
+        return;
+    }
+
+    // Output the response based on the status
+    if (isset($responseData->status) && $responseData->status === 'success') {
+        $app->enqueueMessage(Text::_('APP_SENT_FOR_COMPILATION'), 'message');
+    } else {
+        // Handle other response statuses or errors
+        $errorMessage = isset($responseData->message) ? $responseData->message : 'Unknown error';
+        $app->enqueueMessage(Text::_('APP_NOT_SENT_FOR_COMPILATION') . ': ' . $errorMessage, 'error');
+    }
+} catch (Exception $e) {
+    // Handle exceptions during the HTTP request
+    $app->enqueueMessage('HTTP request exception: ' . $e->getMessage(), 'error');
 }
 
         
