@@ -787,6 +787,17 @@ class MobileappapiController extends FormController {
 		$db->setQuery( $query );
 		$eventlatlong = $db->loadAssoc();
 
+		if (empty($eventlatlong)) {
+	    		$selfcheckinresponse = array(
+	    			'result' => 'error',
+	    			'message' => Text::_( 'COM_APPSCONDA_MOBILE_SELF_CHECKING_EVENT_LOCATION_NOT_SET' )
+	    		);
+	    		header( 'Content-Type: application/json' );
+	    		http_response_code( 403 );
+	    		echo json_encode( $selfcheckinresponse );
+	    		jexit();
+		}
+
 		$query = $db->getQuery( true )->select( 'event_date' )->from( $db->quoteName( '#__eb_events' ) )->where( $db->quoteName( 'id' ) . ' = ' . $db->quote( $eventid ) );
 		$db->setQuery( $query );
 		$eventstartdate = $db->loadResult();
