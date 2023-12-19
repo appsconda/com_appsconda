@@ -14,6 +14,7 @@ use Joomla\CMS\Language\Text;
 use Joomla\CMS\Router\Route;
 use Joomla\CMS\HTML\HTMLHelper;
 use Joomla\CMS\Http\HttpFactory;
+use Joomla\CMS\Factory;
 
 /** @var \Joomla\Component\Appsconda\Administrator\View\Compilation\HtmlView $this */
 
@@ -23,6 +24,21 @@ $wa->getRegistry()->addExtensionRegistryFile('com_contenthistory');
 $wa->useScript('keepalive')
    ->useScript('form.validate')
    ->useScript('com_contenthistory.admin-history-versions');
+?>
+
+<?php
+$app = Factory::getApplication();
+
+// Check if 'curl' extension is loaded
+if (!extension_loaded('curl')) {
+    $app->enqueueMessage( 'The curl extension for PHP is not loaded. Please install or enable it.', 'error' );
+}
+
+// Check if 'json' extension is loaded
+if (!extension_loaded('json')) {
+    $app->enqueueMessage( 'The json extension for PHP is not loaded. Please install or enable it.', 'error' );
+}
+
 ?>
 
 <?php
