@@ -4537,6 +4537,16 @@ $query = $db->getQuery(true)
 
 $db->setQuery($query);
 $hexValue = $db->loadResult();
+
+if (empty($hexValue)) {
+    header('Content-Type: application/json');
+	http_response_code(200);
+    $result = array(
+        'number_of_products' => 0
+    );
+    echo json_encode($result);
+    jexit();
+}
 	
 $dataArray = json_decode($hexValue, true);
 $totalProducts = 0;
