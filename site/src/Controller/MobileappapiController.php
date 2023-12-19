@@ -1102,7 +1102,7 @@ class MobileappapiController extends FormController {
 						'result' => $mytickets
 					];
 					header( 'Content-Type: application/json' );
-					http_response_code( 403 );
+					http_response_code( 200 );
 
 					echo json_encode( $myorderdetails );
 
