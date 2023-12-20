@@ -16,6 +16,7 @@ use Joomla\CMS\MVC\Model\AdminModel;
 use Joomla\CMS\Table\Table;
 use Joomla\CMS\Factory;
 use Joomla\CMS\UCM\UCMType;
+use Joomla\CMS\Uri\Uri;
 
 /**
  * Appsconda model
@@ -63,6 +64,26 @@ class CompilationModel extends AdminModel
 		if (empty($data))
 		{
 			$data = $this->getItem();
+			
+			if (empty($data->packagename)) {
+			    $uri = Uri::getInstance();
+			    $domain = $uri->getHost();
+			    $initialpkg = 'app.' . $domain;
+			    // Split the string into parts
+                $parts = explode('.', $initialpkg);
+                // Take only the first three parts and rejoin them
+                $finalpkg = implode('.', array_slice($parts, 0, 3));
+                $data->packagename = $finalpkg;
+            } else {
+                $app = Factory::getApplication();
+                // Regular expression to match the format 'word.word.word'
+                if (!preg_match('/^[a-zA-Z0-9]+(\.[a-zA-Z0-9]+){2}$/', $data->packagename)) {
+                    // Display a message if the format is not matched
+                    $app->enqueueMessage( 'The "Name of the package" must be in the format word.word.word. e.g. app.domain.com.', 'error' );
+                } else {
+                    // Format is correct, continue your logic
+                }
+            }
 		}
 
 		return $data;
