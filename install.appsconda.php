@@ -33,7 +33,7 @@ class com_appscondaInstallerScript
 
         // Check if the file exists
         if (!file_exists($fullPath)) {
-            JFactory::getApplication()->enqueueMessage("SQL file not found: " . $fullPath, 'error');
+            Factory::getApplication()->enqueueMessage("SQL file not found: " . $fullPath, 'error');
             return false;
         }
 
