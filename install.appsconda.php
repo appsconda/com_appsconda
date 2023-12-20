@@ -20,8 +20,8 @@ use Joomla\Registry\Registry;
 
 class com_appscondaInstallerScript
 {
-    function preFlight($type, $parent) {
-        $this->executeSQLFile('/administrator/sql/update.sql');
+    function postFlight($type, $parent) {
+        $this->executeSQLFile('/components/com_appsconda/sql/update.sql');
     }
 
     private function executeSQLFile($filePath) {
