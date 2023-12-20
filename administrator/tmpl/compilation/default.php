@@ -39,6 +39,50 @@ if (!extension_loaded('json')) {
     $app->enqueueMessage( 'The json extension for PHP is not loaded. Please install or enable it.', 'error' );
 }
 
+// Access the database object
+$db = Factory::getDbo();
+
+// Create a new query object.
+$query = $db->getQuery(true);
+
+// Define the query to select from #__extensions table
+$query->select($db->quoteName(array('extension_id', 'element', 'enabled')))
+      ->from($db->quoteName('#__extensions'))
+      ->where($db->quoteName('element') . ' = ' . $db->quote('appscondalogin'))
+      ->where($db->quoteName('enabled') . ' = 1');
+
+// Set the query and load the result.
+$db->setQuery($query);
+$result = $db->loadObject();
+
+// Check if the item is present.
+if ($result) {
+    // Item found - perform necessary actions.
+} else {
+    // Item not found - display a message.
+    $app->enqueueMessage( 'The "Authentication - Appsconda Login" plugin is not installed/enabled. Please install and enable it. You can find the installer in the download package.', 'error' );
+}
+
+$query->clear();
+
+// Define the query to select from #__extensions table
+$query->select($db->quoteName(array('extension_id', 'element', 'enabled')))
+      ->from($db->quoteName('#__extensions'))
+      ->where($db->quoteName('element') . ' = ' . $db->quote('appscondacss'))
+      ->where($db->quoteName('enabled') . ' = 1');
+
+// Set the query and load the result.
+$db->setQuery($query);
+$result = $db->loadObject();
+
+// Check if the item is present.
+if ($result) {
+    // Item found - perform necessary actions.
+} else {
+    // Item not found - display a message.
+    $app->enqueueMessage( 'The "AppsConda CSS" plugin is not installed/enabled. Please install and enable it. You can find the installer in the download package.', 'error' );
+}
+
 ?>
 
 <?php
