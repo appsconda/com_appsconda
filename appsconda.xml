@@ -11,6 +11,8 @@
     <description>This is a Joomla component developed by AppsConda. This extension enables the Joomla website to power and drive the mobile app.</description>
     <namespace path="src">Joomla\Component\Appsconda</namespace>
 
+	<scriptfile>install.appsconda.php</scriptfile>
+
     <!-- Runs on install -->
     <install>
         <sql>
