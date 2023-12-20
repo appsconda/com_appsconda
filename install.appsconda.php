@@ -20,23 +20,31 @@ use Joomla\Registry\Registry;
 
 class com_appscondaInstallerScript
 {
-    function preFlight($parent) {
-        $this->executeSQLFile($parent, '/administrator/sql/update.sql');
+    function preFlight($type, $parent) {
+        $this->executeSQLFile('/administrator/sql/update.sql');
     }
 
-    private function executeSQLFile($parent, $filePath) {
+    private function executeSQLFile($filePath) {
         $db = Factory::getDbo();
 
         // Construct the full path to the SQL file
-        $fullPath = $parent->getParent()->getPath('source') . $filePath;
+        // Assuming this script is within the 'scriptfile' element in your XML file
+        $fullPath = JPATH_ADMINISTRATOR . $filePath;
+
+        // Check if the file exists
+        if (!file_exists($fullPath)) {
+            JFactory::getApplication()->enqueueMessage("SQL file not found: " . $fullPath, 'error');
+            return false;
+        }
 
         // Read the SQL file
         $sql = file_get_contents($fullPath);
 
         // Execute each query in the file
         foreach (explode(';', $sql) as $query) {
-            if (!empty(trim($query))) {
-                $db->setQuery($query);
+            $trimmedQuery = trim($query);
+            if (!empty($trimmedQuery)) {
+                $db->setQuery($trimmedQuery);
                 $db->execute();
             }
         }
