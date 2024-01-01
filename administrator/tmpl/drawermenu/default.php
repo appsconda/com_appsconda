@@ -41,7 +41,7 @@ $wa->useScript('keepalive')
 				<div class="row">
 				<div class="col-12 col-lg-4">
                     <fieldset id="fieldset-publishingdata" class="options-form">
-                        <legend>Custom Page</legend>
+                        <legend>Custom Page 01</legend>
                         
                         <div class="control-group">
 					<div class="control-label">
@@ -99,7 +99,7 @@ $wa->useScript('keepalive')
                 
                 <div class="col-12 col-lg-4">
                     <fieldset id="fieldset-publishingdata" class="options-form">
-                        <legend>Custom Page</legend>
+                        <legend>Custom Page 02</legend>
                         
                         <div class="control-group">
 					<div class="control-label">
@@ -155,7 +155,7 @@ $wa->useScript('keepalive')
                 
                 <div class="col-12 col-lg-4">
                     <fieldset id="fieldset-publishingdata" class="options-form">
-                        <legend>Articles Category</legend>
+                        <legend>Articles Category 01</legend>
                         
                         <div class="control-group">
 					<div class="control-label">
@@ -216,7 +216,7 @@ $wa->useScript('keepalive')
                 <div class="row">
 				<div class="col-12 col-lg-4">
                     <fieldset id="fieldset-publishingdata" class="options-form">
-                         <legend>Articles Category</legend>
+                         <legend>Articles Category 02</legend>
                         
                         <div class="control-group">
 					<div class="control-label">
