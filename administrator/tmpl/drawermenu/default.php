@@ -873,7 +873,7 @@ $wa->useScript('keepalive')
 				</div>
 				<div class="control-group">
 					<div class="control-label">
-						<?php echo $this->form->getLabel('mloginlabel'); ?>
+						<?php echo $this->form->getLabel('loginlabel'); ?>
 					</div>
 					<div class="controls">
 						<?php echo $this->form->getInput('loginlabel'); ?>
@@ -904,6 +904,97 @@ $wa->useScript('keepalive')
 
                 <div class="col-12 col-lg-4">
 				<fieldset id="fieldset-publishingdata" class="options-form">
+                         <legend>My Account</legend>
+                         
+                         <div class="control-group">
+					<div class="control-label">
+						<?php echo $this->form->getLabel('myaccountshow'); ?>
+					</div>
+					<div class="controls">
+						<?php echo $this->form->getInput('myaccountshow'); ?>
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="control-label">
+						<?php echo $this->form->getLabel('myaccountlabel'); ?>
+					</div>
+					<div class="controls">
+						<?php echo $this->form->getInput('myaccountlabel'); ?>
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="control-label">
+						<?php echo $this->form->getLabel('myaccountcolor'); ?>
+					</div>
+					<div class="controls">
+						<?php echo $this->form->getInput('myaccountcolor'); ?>
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="control-label">
+						<?php echo $this->form->getLabel('myaccounticon'); ?>
+					</div>
+					<div class="controls">
+						<?php echo $this->form->getInput('myaccounticon'); ?>
+					</div>
+				</div>
+
+				
+                         
+                         </fieldset>
+				
+</div>
+				
+				</div>  
+
+<div class="row">
+				<div class="col-12 col-lg-4">
+				<fieldset id="fieldset-publishingdata" class="options-form">
+                         <legend>Logout</legend>
+                         
+                         <div class="control-group">
+					<div class="control-label">
+						<?php echo $this->form->getLabel('logoutshow'); ?>
+					</div>
+					<div class="controls">
+						<?php echo $this->form->getInput('logoutshow'); ?>
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="control-label">
+						<?php echo $this->form->getLabel('logoutlabel'); ?>
+					</div>
+					<div class="controls">
+						<?php echo $this->form->getInput('logoutlabel'); ?>
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="control-label">
+						<?php echo $this->form->getLabel('logoutcolor'); ?>
+					</div>
+					<div class="controls">
+						<?php echo $this->form->getInput('logoutcolor'); ?>
+					</div>
+				</div>
+				<div class="control-group">
+					<div class="control-label">
+						<?php echo $this->form->getLabel('logouticon'); ?>
+					</div>
+					<div class="controls">
+						<?php echo $this->form->getInput('logouticon'); ?>
+					</div>
+				</div>
+
+				
+                         
+                         </fieldset>
+				
+</div>
+
+                
+
+                <div class="col-12 col-lg-4">
+				<fieldset id="fieldset-publishingdata" class="options-form">
                          <legend>Image Above Menu (916px by 320px</legend>
                          
                          <div class="control-group">
@@ -919,7 +1010,7 @@ $wa->useScript('keepalive')
 				
 </div> 
 				
-				</div>   
+				</div>
                          
                          
 					
