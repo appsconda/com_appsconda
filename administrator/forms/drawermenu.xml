@@ -811,7 +811,7 @@
 		<field
 			name="myaccountshow"
 			type="list"
-			label="Show"
+			label="Show (Should be same as Login)"
 			description=""
 			class="inputbox"
 			size="1"
