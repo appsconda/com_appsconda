@@ -818,7 +818,7 @@
 			required="true"
 			default=""
 			>
-			<option value="false">No</option>
+			<option value="true">No</option>
 			<option value="true">Yes</option>
 		</field>
 	
