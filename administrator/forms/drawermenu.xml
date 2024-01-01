@@ -808,6 +808,80 @@
 			description=""
 			default=""
 			/>
+		<field
+			name="myaccountshow"
+			type="list"
+			label="Show"
+			description=""
+			class="inputbox"
+			size="1"
+			required="true"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+	
+		<field
+			name="myaccountlabel"
+			type="textfield"
+			label="Label"
+			description=""
+			default=""
+			/>
+	
+		<field
+			name="myaccountcolor"
+			type="color"
+			label="Color"
+			description=""
+			default=""
+			/>
+	
+		<field
+			name="myaccounticon"
+			type="media"
+			label="Icon"
+			description=""
+			default=""
+			/>
+		<field
+			name="logoutshow"
+			type="list"
+			label="Show"
+			description=""
+			class="inputbox"
+			size="1"
+			required="true"
+			default=""
+			>
+			<option value="false">No</option>
+			<option value="true">Yes</option>
+		</field>
+	
+		<field
+			name="logoutlabel"
+			type="textfield"
+			label="Label"
+			description=""
+			default=""
+			/>
+	
+		<field
+			name="logoutcolor"
+			type="color"
+			label="Color"
+			description=""
+			default=""
+			/>
+	
+		<field
+			name="logouticon"
+			type="media"
+			label="Icon"
+			description=""
+			default=""
+			/>
 	
 		<field
 			name="menu1contentid"
