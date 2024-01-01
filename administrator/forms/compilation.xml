@@ -47,6 +47,7 @@
 			<option value="VideosWidget">YouTube Channel</option>
 			<option value="GalleryWidget">SP Easy Image Gallery</option>
 			<option value="SupportWidget">Helpdesk Pro</option>
+			<option value="Webview1Widget">Webview 01</option>
 		</field>
 	
 		<field
